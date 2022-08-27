@@ -1,0 +1,11 @@
+width 100000
+height 100000
+
+floor_texture ../texture/ACT_floor_sim_01.png
+
+#side walls
+0 0 0 100000
+0 100000 100000 100000
+100000 100000 100000 0
+100000 0 0 0 
+

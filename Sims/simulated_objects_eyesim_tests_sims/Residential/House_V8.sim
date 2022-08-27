@@ -1,0 +1,8 @@
+#Environment
+world ../../worlds/sim_objects_eyesim_testing_world.wld
+
+#objects
+object ../../environment_objects/Residential/House_V8/House_V8.esObj
+
+########################
+House_V8 5000 5000 0

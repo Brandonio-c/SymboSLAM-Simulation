@@ -1,0 +1,591 @@
+#Simulation designed to test the functionmality of environment contextualisation of the SmboSLAM system
+#Simulated environment is the Gunghalin district of the Australian Capital Territory 
+# this is segment 8 of 16 segments (1,3)
+# naming convention is x = 0-3, y = 0-3, square 1 at 00, square 2 at 01, square 5 at 10 etc. 
+#ACT Planning map used as ground truth 
+#Link: https://app2.actmapi.act.gov.au/actmapi/index.html?viewer=basic
+
+#author: Brandon Colelough
+#email: Brandon.colelough@gmail.com
+
+
+#Environment
+world ../worlds/ACT_sim_1_seg_13_world.wld
+
+#set the trace on 
+#settings VIS TRACE
+
+
+
+############################----------------------------------------------------------------------------------------------------------------------object files
+###########-------------------------------------------------Commercial
+
+object ../environment_objects/Commercial/apartment/apartment_bldg.esObj
+object ../environment_objects/Commercial/Bench/Bench.esObj
+object ../environment_objects/Commercial/bldg/bldg.esObj
+object ../environment_objects/Commercial/bldg2/bldg.esObj
+object ../environment_objects/Commercial/bldg3/bldg.esObj
+object ../environment_objects/Commercial/bldg4/bldg.esObj
+object ../environment_objects/Commercial/person/builder_woman/builder_woman.esObj
+object ../environment_objects/Commercial/person/kid1/kid1.esObj
+object ../environment_objects/Commercial/person/kid2/kid2.esObj
+object ../environment_objects/Commercial/person/suit_man/suit_man.esObj
+object ../environment_objects/Commercial/bus/bus1/bus.esObj
+object ../environment_objects/Commercial/towers/comms/comms_tower.esObj
+object ../environment_objects/Commercial/car/cybertruck/cybertruck.esObj
+object ../environment_objects/Commercial/car/mitsi/mitsi.esObj
+object ../environment_objects/Commercial/car/mustang/mustang.esObj
+object ../environment_objects/Commercial/car/nissan/nissan.esObj
+object ../environment_objects/Commercial/Hydrant/Hydrant.esObj
+object ../environment_objects/Commercial/traffic_light/v2/traffic_light_v2.esObj
+object ../environment_objects/Commercial/towers/power/power_tower.esObj
+object ../environment_objects/Commercial/gas_station/gas_station.esObj
+object ../environment_objects/Commercial/stop_light/stop_light.esObj
+object ../environment_objects/Commercial/StopSign/stopsign_3.esObj
+object ../environment_objects/Commercial/stores/stores.esObj
+
+###########-------------------------------------------------Commercial
+
+###########-------------------------------------------------Community facility
+
+object ../environment_objects/Community_Facility/airport/airliner1/airliner.esObj
+object ../environment_objects/Community_Facility/airport/Helo_V1/Helo_V1.esObj
+object ../environment_objects/Community_Facility/airport/Helo_V2/Helo_V2.esObj
+object ../environment_objects/Community_Facility/basketball_courts/Basketball_Courts.esObj
+object ../environment_objects/Community_Facility/soccer_field/soccer_fields.esObj
+object ../environment_objects/Community_Facility/school/school.esObj
+
+###########-------------------------------------------------Community facility
+
+###########-------------------------------------------------Industrial
+
+object ../environment_objects/Industrial/container/container.esObj
+object ../environment_objects/Industrial/factory_v1/factory.esObj
+object ../environment_objects/Industrial/factory_v2/factory.esObj
+object ../environment_objects/Industrial/silo/silo.esObj
+object ../environment_objects/Industrial/warehouse/warehouse.esObj
+object ../environment_objects/Industrial/fence/fence.esObj
+
+###########-------------------------------------------------Industrial
+
+###########-------------------------------------------------Military
+
+object ../environment_objects/Military/attack_helo/helo.esObj
+object ../environment_objects/Military/C17/C17.esObj
+object ../environment_objects/Military/F15/F15.esObj
+object ../environment_objects/Military/JSF/JSF.esObj
+object ../environment_objects/Military/missile_launcher/missile_launcher.esObj
+object ../environment_objects/Military/missile/missile.esObj
+object ../environment_objects/Military/humvee/humvee.esObj
+object ../environment_objects/Military/tank/tank.esObj
+object ../environment_objects/Military/soldier_v1/soldier_v1.esObj
+object ../environment_objects/Military/soldier_v2/soldier_v2.esObj
+
+###########-------------------------------------------------Military
+
+###########-------------------------------------------------Non-Urban
+
+object ../environment_objects/Non_Urban/bush/bush.esObj
+object ../environment_objects/Non_Urban/trees/Tree_V1/Tree-A.esObj
+object ../environment_objects/Non_Urban/trees/Tree_V1/Tree-B.esObj
+object ../environment_objects/Non_Urban/trees/Tree_V1/Tree-C.esObj
+object ../environment_objects/Non_Urban/animals/cockatoo/cockatoo.esObj
+object ../environment_objects/Non_Urban/animals/cow/cow.esObj
+object ../environment_objects/Non_Urban/animals/kangaroo/kangaroo.esObj
+object ../environment_objects/Non_Urban/animals/sheep/sheep.esObj
+
+
+###########-------------------------------------------------Non-Urban
+
+###########-------------------------------------------------Parks and Rec
+
+object ../environment_objects/Parks_and_Rec/animals/cockatoo/cockatoo.esObj
+object ../environment_objects/Parks_and_Rec/animals/dog/dog.esObj
+object ../environment_objects/Parks_and_Rec/plants/bush/bush.esObj
+object ../environment_objects/Parks_and_Rec/plants/hedge/hedge.esObj
+object ../environment_objects/Parks_and_Rec/playground/slide/slide.esObj
+object ../environment_objects/Parks_and_Rec/playground/swings/swings.esObj
+object ../environment_objects/Parks_and_Rec/playground/table/table.esObj
+object ../environment_objects/Parks_and_Rec/playground/gazebo/gazebo.esObj
+object ../environment_objects/Parks_and_Rec/toilets/toilets.esObj
+object ../environment_objects/Parks_and_Rec/trees/Tree_V1/Tree-A.esObj
+object ../environment_objects/Parks_and_Rec/trees/Tree_V1/Tree-B.esObj
+object ../environment_objects/Parks_and_Rec/trees/Tree_V1/Tree-C.esObj
+
+
+###########-------------------------------------------------Parks and Rec
+
+###########-------------------------------------------------Residential
+
+object ../environment_objects/Residential/animals/cat_v1/cat_v1.esObj
+object ../environment_objects/Residential/animals/cat_v2/cat_v2.esObj
+object ../environment_objects/Residential/animals/dog/dog.esObj
+object ../environment_objects/Residential/House_V1/house.esObj
+object ../environment_objects/Residential/House_V2/house.esObj
+object ../environment_objects/Residential/House_V3/House_V3.esObj
+object ../environment_objects/Residential/House_V3/House_V3.esObj
+object ../environment_objects/Residential/House_V4/House_V4.esObj
+object ../environment_objects/Residential/House_V5/House_V5.esObj
+object ../environment_objects/Residential/House_V6/House_V6.esObj
+object ../environment_objects/Residential/House_V7/House_V7.esObj
+object ../environment_objects/Residential/House_V8/House_V8.esObj
+object ../environment_objects/Residential/House_V9/House_V9.esObj
+object ../environment_objects/Residential/House_V10/House_V10.esObj
+
+
+
+
+###########-------------------------------------------------Residential
+
+
+###########-------------------------------------------------Transport and Services
+
+object ../environment_objects/Transport_and_Services/bus/bus1/bus.esObj
+object ../environment_objects/Transport_and_Services/bus_stop/bus_stop.esObj
+object ../environment_objects/Transport_and_Services/train/train.esObj
+object ../environment_objects/Transport_and_Services/bldg/bldg.esObj
+object ../environment_objects/Transport_and_Services/substation/substation.esObj
+object ../environment_objects/Transport_and_Services/substation_v2/substation_v2.esObj
+
+
+###########-------------------------------------------------Transport and Services
+
+############################----------------------------------------------------------------------------------------------------------------------end of object files
+
+############################----------------------------------------------------------------------------------------------------------------------Environment Objects
+
+
+
+apartment_bldg 1500 13500 170
+apartment_bldg 3000 13000 170
+bldg_01 3000 11500 170
+bldg_01 2800 10000 170
+bldg_01 1000 12000 170
+bldg_01 800 10500 170
+
+mitsi 1450 10900 80
+mitsi 1850 10700 80
+mitsi 2250 10500 80
+
+mitsi 1300 10200 80
+mitsi 1700 10000 80
+mitsi 2100 9800 80
+
+nissan 1450 11900 80
+nissan 1850 11700 80
+nissan 2250 11500 80
+
+
+
+stores 2000 8000 260
+bldg_03 7000 7000 260
+bldg_03 10000 6200 260
+Bench 10000 9000 0
+
+bldg_01 8000 13000 170
+
+bldg_01 6400 12500 260
+bldg_01 6550 14000 260
+bldg_01 6700 15500 260
+bldg_01 6850 17000 260
+bldg_01 7000 18500 260
+
+mitsi 3800 17000 170
+mitsi 4600 16900 170
+nissan 5400 16800 170
+
+mitsi 3800 17500 170
+mitsi 4600 17400 170
+nissan 5400 17300 170
+
+bldg_01 5000 18500 110
+
+bldg_01 4500 16000 260
+
+bldg_02 2000 16500 80
+
+
+bldg_03 7500 11000 260
+bldg_03 10500 10500 260
+bldg_03 2000 6000 260
+
+mitsi 11800 4400 350
+mustang 11700 3900 350
+nissan 11600 3400 350
+cybertruck 11500 2900 260
+
+mitsi 10800 4600 350
+mustang 10700 4100 350
+nissan 10600 3600 350
+cybertruck 10500 3100 260
+
+bldg_04 9500 5000 260
+
+nissan 9600 3800 350
+cybertruck 9500 3300 260
+
+nissan 8600 4000 350
+cybertruck 8500 3500 260
+
+
+mitsi 7800 5200 350
+mustang 7700 4700 350
+nissan 7600 4200 350
+cybertruck 7500 3700 260
+mitsi 6800 5400 350
+mustang 6700 4900 350
+nissan 6600 4400 350
+cybertruck 6500 3900 260
+mitsi 5800 5600 350
+mustang 5700 5100 350
+nissan 5600 4600 350
+cybertruck 5500 4100 260
+mitsi 4800 5800 350
+mustang 4700 5300 350
+nissan 4600 4800 350
+cybertruck 4500 4300 260
+
+
+
+builder_woman 10000 9500 0
+suit_man 10100 9700 0
+builder_woman 10300 9500 0
+suit_man 9800 9900 0
+builder_woman 10600 9200 0
+suit_man 10500 9700 0
+
+
+House_V1 500 3600 0
+House_V1 2000 3600 0
+House_V1 3500 3200 0
+House_V1 5000 2700 0
+House_V1 6500 2200 0
+
+House_V1 500 4600 0
+House_V1 2000 4600 0
+House_V1 3500 4200 0
+House_V1 5000 3700 0
+House_V1 6500 3200 0
+
+
+bldg_04 8500 2100  260
+
+nissan 8500 1300 350
+mustang 8600 800 350
+mitsi 7700 1300 350
+
+bldg_04 13400 3500 260
+mustang 13000 5000 260
+mitsi 13500 5000 260
+mitsi 14000 5000 260
+
+mustang 13200 6000 260
+mitsi 13700 6000 260
+mitsi 14200 6000 260
+
+bldg_04 10000 1600  170
+
+mustang 11000 1800 350
+mitsi 11000 1300 350
+mitsi 11000 800 350
+
+House_V10 13000 500 0
+
+
+apartment_bldg 18000 2500 160
+apartment_bldg 19000 4500 160
+apartment_bldg 21000 4000 160
+apartment_bldg 23000 3500 160
+
+# Objects - houses
+House_V1 24496 6507 90
+House_V2 24529 7840 90
+House_V3 24579 9102 90
+House_V2 24702 10402 90
+House_V3 24651 11800 90
+House_V1 24633 13154 90
+House_V1 24594 14317 90
+House_V1 24789 16108 90
+House_V1 24744 17043 90
+House_V1 24720 18172 90
+House_V5 23947 17163 90
+House_V1 23491 6848 90
+House_V1 23469 8117 90
+House_V3 23548 9330 90
+House_V4 23629 10619 90
+House_V1 23623 11910 90
+House_V1 23637 13005 90
+House_V1 23669 14186 90
+House_V2 22376 7202 90
+House_V1 22394 8379 90
+House_V4 22502 9542 90
+House_V2 22611 10842 90
+House_V1 22741 12435 90
+House_V7 20823 21150 90
+House_V1 20542 22506 90
+House_V5 19720 24088 90
+House_V1 18710 24309 90
+House_V3 17485 24385 90
+House_V1 16504 24534 90
+House_V1 15442 24510 90
+House_V3 22931 13490 90
+House_V1 20192 530 90
+House_V2 21066 479 90
+House_V3 22136 373 90
+House_V1 22883 223 90
+House_V4 23923 166 90
+House_V1 24460 1112 90
+House_V1 18027 23416 90
+House_V1 16741 23491 90
+House_V1 15486 23566 90
+House_V4 14198 24531 90
+House_V8 19234 20930 90
+House_V1 18210 21632 90
+House_V2 17506 22423 90
+House_V2 19029 19964 90
+House_V2 17770 20549 90
+House_V1 17009 21486 90
+House_V2 16247 22423 90
+House_V1 14227 23506 90
+House_V2 13086 24443 90
+House_V3 13115 23390 90
+House_V1 14960 22453 90
+House_V1 16481 20608 90
+House_V2 15690 21399 90
+House_V1 15339 20520 90
+House_V2 14403 21341 90
+House_V1 13495 22336 90
+House_V1 13319 21106 90
+House_V4 11885 23360 90
+House_V5 9924 22278 90
+House_V1 12266 22247 90
+House_V1 12178 21281 90
+House_V2 10977 21750 90
+House_V1 11006 22629 90
+House_V1 10597 23653 90
+House_V2 10422 24589 90
+House_V1 9192 24620 90
+House_V1 8226 24560 90
+House_V3 8020 23566 90
+House_V1 7113 24385 90
+House_V3 3541 24589 90
+House_V1 4594 24707 90
+House_V3 5824 24678 90
+House_V1 20259 17798 90
+House_V2 21312 17534 90
+House_V1 22249 17154 90
+House_V2 21811 15719 90
+House_V1 20756 16510 90
+House_V6 21429 14079 90
+House_V8 20259 15016 90
+House_V1 19791 16070 90
+House_V1 20874 12234 90
+House_V2 21107 13055 90
+House_V8 19820 13582 90
+House_V1 19614 12587 90
+House_V1 19351 17212 90
+House_V3 19087 14811 90
+House_V1 18443 12849 90
+House_V1 18501 13904 90
+House_V7 18063 17387 90
+House_V7 16218 17769 90
+House_V7 14169 18120 90
+House_V7 12295 18559 90
+House_V8 18297 16070 90
+House_V1 17770 14987 90
+House_V2 17213 16157 90
+House_V3 17535 13815 90
+House_V1 17389 12878 90
+House_V1 16891 15016 90
+House_V1 16598 13875 90
+House_V3 16511 12762 90
+House_V4 16569 11590 90
+House_V1 16540 10624 90
+House_V1 16012 15806 90
+House_V1 16101 16714 90
+House_V2 15164 16832 90
+House_V2 15135 15806 90
+House_V1 16365 9716 90
+House_V1 15515 13757 90
+House_V1 15632 12645 90
+House_V1 935 20404 90
+House_V1 1638 20930 90
+House_V1 2398 21341 90
+House_V2 3189 21632 90
+House_V2 4039 21954 90
+House_V3 4858 22278 90
+House_V1 1052 21370 90
+House_V3 1783 21954 90
+House_V1 3688 22600 90
+House_V1 2751 22160 90
+House_V1 14227 17065 90
+House_V1 14139 15866 90
+House_V2 13994 14869 90
+House_V1 13408 17241 90
+House_V2 12442 17358 90
+House_V1 11358 17476 90
+House_V2 13261 16041 90
+House_V1 12295 16099 90
+House_V4 11212 16099 90
+House_V1 14403 13815 90
+House_V1 13057 14987 90
+House_V1 12031 15045 90
+House_V1 10977 15191 90
+House_V1 13348 13786 90
+House_V1 12266 13786 90
+House_V1 11094 13904 90
+House_V3 14578 12674 90
+House_V4 13466 12645 90
+House_V1 15574 11590 90
+House_V1 15457 10507 90
+House_V4 15368 9629 90
+cat_v1 13730 16510 90
+cat_v1 12910 17944 90
+cat_v1 18532 15104 90
+cat_v1 23450 11181 90
+cat_v1 24211 16099 90
+cat_v1 12851 21632 90
+cat_v1 11094 23068 90
+cat_v2 15632 22804 90
+cat_v1 14842 23595 90
+cat_v2 17302 23477 90
+cat_v2 19000 23624 90
+cat_v2 7464 23828 90
+cat_v2 2194 21663 90
+cat_v2 4243 22600 90
+cat_v2 9045 23946 90
+cat_v2 12617 23741 90
+cat_v2 21664 465 90
+cat_v2 20405 962 90
+House_V2 21547 7843 90
+cat_v2 16072 10302 90
+cat_v2 20082 16685 90
+cat_v2 22044 17505 90
+cat_v2 11474 18999 90
+
+# Objects - houses
+
+# Objects - Trees
+Tree-A 18308 326 90
+Tree-C 19374 215 90
+Tree-B 18827 1488 90
+Tree-A 19784 1459 90
+Tree-A 20774 1286 90
+Tree-A 21598 1028 90
+Tree-A 22499 773 90
+Tree-A 23566 660 90
+Tree-A 23634 1344 90
+Tree-A 23007 1547 90
+Tree-A 22088 1928 90
+Tree-A 21296 2106 90
+Tree-A 20264 2314 90
+Tree-A 19323 2586 90
+Tree-A 19795 3607 90
+Tree-A 20035 4440 90
+Tree-A 20752 7182 90
+Tree-A 21138 8435 90
+Tree-A 21366 9708 90
+Tree-A 21612 10874 90
+Tree-A 22020 12820 90
+Tree-A 21880 11917 90
+Tree-C 22161 13961 90
+Tree-A 22570 15074 90
+Tree-A 23917 15162 90
+Tree-A 22716 16450 90
+Tree-A 22951 17797 90
+Tree-C 23448 18763 90
+Tree-A 21897 18587 90
+Tree-A 24474 19114 90
+Tree-A 19379 9277 90
+Tree-A 17710 11737 90
+Tree-A 17301 9688 90
+StopSign 4830 9015 90
+StopSign 4976 10771 90
+traffic_light_v2 7230 20139 90
+traffic_light_v2 6675 21691 90
+traffic_light_v2 21721 20841 90
+traffic_light_v2 23185 19700 90
+stop_light 3864 13464 90
+stop_light 5532 13260 90
+stop_light 3689 15338 90
+traffic_light_v2 22980 22130 90
+traffic_light_v2 24297 21134 90
+Tree-A 18354 22100 90
+Tree-B 19468 11796 90
+Tree-B 19584 22130 90
+Tree-A 19701 22803 90
+Tree-A 18822 22979 90
+Tree-B 19175 22568 90
+Tree-B 18911 10536 90
+Tree-A 9133 11386 90
+Tree-A 8957 12938 90
+Tree-A 11446 10976 90
+Tree-A 11417 12732 90
+Tree-A 9982 13757 90
+Tree-A 10158 14929 90
+Tree-A 10509 16217 90
+Tree-A 10744 17416 90
+Tree-A 11006 18645 90
+Tree-A 8284 18353 90
+Tree-A 8051 17475 90
+Tree-B 7640 16392 90
+Tree-A 5854 19466 90
+Tree-A 4655 19144 90
+Tree-A 3629 18705 90
+Tree-C 2166 18148 90
+Tree-C 819 17475 90
+Tree-A 14842 14401 90
+Tree-A 14900 15309 90
+Tree-B 16159 14987 90
+Tree-B 16043 14314 90
+Tree-A 10100 11941 90
+Tree-A 9397 23389 90
+Tree-B 8635 22452 90
+Tree-A 7230 22539 90
+Tree-A 6528 23651 90
+Tree-A 5796 24237 90
+Tree-A 4712 24004 90
+Tree-A 3396 24004 90
+Tree-B 5356 23798 90
+Tree-A 6322 23037 90
+Tree-A 2781 24648 90
+Tree-A 11359 24472 90
+Tree-A 12207 24120 90
+Tree-C 1962 24501 90
+Tree-A 1054 24501 90
+Tree-A 497 24179 90
+Tree-A 1580 23682 90
+Tree-A 2517 23447 90
+Tree-A 3864 23476 90
+Tree-A 672 23214 90
+Tree-B 1727 22832 90
+Tree-A 2985 22745 90
+Tree-A 497 22013 90
+Tree-A 263 20110 90
+Tree-A 5152 22774 90
+bus_stop 12764 9131 90
+bus_stop 12149 6789 90
+Bench 12353 10713 90
+Hydrant 5240 10771 90
+Hydrant 2927 9073 90
+
+# Objects - Trees
+
+############################----------------------------------------------------------------------------------------------------------------------End Of Environment Objects
+
+
+# Robot placement
+Labbot  700 300 90 ../Control_Agent_2/src/sim_test.py
+#Labbot  700 300 90 ../Control_Agent_2/src/main.py 3 ../Sims/start_loc/ROBOT_LOC_tst_16.txt ../Sims/test_world ../Sims/names/openimages.names F ../Sims/test_world test T ../Sims/oracle_files/oracle-16.txt ../Sims/map_images/
+
+#LabBot 1500 7500 0 ../Edge_Agent/Random_search/build/Random_search.x /Third_Party/darknet/data/openimages.names /Third_Party/darknet/cfg/yolov3-openimages.cfg /Third_Party/darknet/weights/yolov3-openimages.weights
+
+#LabBot 5000 4600 0 ../Edge_Agent/Random_search/build/Random_search.x /Third_Party/darknet/data/openimages.names /Third_Party/darknet/cfg/yolov3-openimages.cfg /Third_Party/darknet/weights/yolov3-openimages.weights
+
+#LabBot 7000 400 0 ../Edge_Agent/Random_search/build/Random_search.x /Third_Party/darknet/data/openimages.names /Third_Party/darknet/cfg/yolov3-openimages.cfg /Third_Party/darknet/weights/yolov3-openimages.weights
+
+#LabBot 3250 1000 0 ../Edge_Agent/Random_search/build/Random_search.x /Third_Party/darknet/data/openimages.names /Third_Party/darknet/cfg/yolov3-openimages.cfg /Third_Party/darknet/weights/yolov3-openimages.weights
+
+#LabBot 4000 2300 90 ../Edge_Agent/Random_search/build/Random_search.x /Third_Party/darknet/data/openimages.names /Third_Party/darknet/cfg/yolov3-openimages.cfg /Third_Party/darknet/weights/yolov3-openimages.weights
+
+

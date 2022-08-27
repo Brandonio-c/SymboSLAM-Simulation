@@ -1,0 +1,65 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"INSTALL"
+		],
+		"files" : 
+		[
+			"Third_Party/DarkHelp/src-lib/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 21,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 22,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "include",
+			"paths" : 
+			[
+				"Third_Party/DarkHelp/src-lib/DarkHelp.hpp",
+				"Third_Party/DarkHelp/src-lib/DarkHelpConfig.hpp",
+				"Third_Party/DarkHelp/src-lib/DarkHelpNN.hpp",
+				"Third_Party/DarkHelp/src-lib/DarkHelpPredictionResult.hpp",
+				"Third_Party/DarkHelp/src-lib/DarkHelpUtils.hpp"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"Third_Party/DarkHelp/src-lib/libdarkhelp.a"
+			],
+			"targetId" : "dh::@c5009b8b047a56e05f5a",
+			"targetIndex" : 2,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "Third_Party/DarkHelp/src-lib",
+		"source" : "Third_Party/DarkHelp/src-lib"
+	}
+}

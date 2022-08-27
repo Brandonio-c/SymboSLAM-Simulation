@@ -1,0 +1,6 @@
+Thread created 
+Thread created 
+Partner:10
+message: 2,208,-118,/0-3,1,-73,/15,209,-56,/12,208,-118,/1/0-59,15,-160,/2suitcase 52%/251/228/2/1/0
+Partner:10
+message: 145,167,91,/0145,167,91,/1/0

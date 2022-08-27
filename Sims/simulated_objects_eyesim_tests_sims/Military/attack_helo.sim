@@ -1,0 +1,9 @@
+#Environment
+world ../../worlds/sim_objects_eyesim_testing_world.wld
+
+#objects
+object ../../environment_objects/Military/attack_helo/helo.esObj
+
+
+########################
+helo 5000 5000 0

@@ -1,0 +1,181 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "Third_Party/DarkHelp",
+					"childIndexes" : 
+					[
+						2,
+						3,
+						4
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Third_Party.DarkHelp-Debug-98664c3b6bf9ae2ed1df.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "Third_Party/DarkHelp"
+				},
+				{
+					"build" : "Third_Party/DarkHelp/src-lib",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Third_Party.DarkHelp.src-lib-Debug-37dbef3eaeaab06c2745.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "Third_Party/DarkHelp/src-lib",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "Third_Party/DarkHelp/src-tool",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Third_Party.DarkHelp.src-tool-Debug-d5937c861eadebd0aeea.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "Third_Party/DarkHelp/src-tool",
+					"targetIndexes" : 
+					[
+						1,
+						4
+					]
+				},
+				{
+					"build" : "Third_Party/DarkHelp/src-doc",
+					"jsonFile" : "directory-Third_Party.DarkHelp.src-doc-Debug-b2274655366b580c698c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "Third_Party/DarkHelp/src-doc",
+					"targetIndexes" : 
+					[
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Random_search",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4
+					],
+					"name" : "DarkHelp",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Random_search.x::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Random_search.x-Debug-012e6ec47cdcfbf31d4e.json",
+					"name" : "Random_search.x",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "cli::@f86561f94763120abe82",
+					"jsonFile" : "target-cli-Debug-784931d2107652689ab8.json",
+					"name" : "cli",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "dh::@c5009b8b047a56e05f5a",
+					"jsonFile" : "target-dh-Debug-87e0c2ab2d50fbeb9298.json",
+					"name" : "dh",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "doc::@e13dc441f73c1ead6325",
+					"jsonFile" : "target-doc-Debug-a7e3466da7caaeb197df.json",
+					"name" : "doc",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "server::@f86561f94763120abe82",
+					"jsonFile" : "target-server-Debug-009044c9a4058478ccbf.json",
+					"name" : "server",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/brandonio/Documents/Thesis_project_2022/EyeSim_simulation_software/EyeSim/myscripts/Project_scripts/Ontological_Slam/Edge_Agent/Random_search_V2/cmake-build-debug",
+		"source" : "/home/brandonio/Documents/Thesis_project_2022/EyeSim_simulation_software/EyeSim/myscripts/Project_scripts/Ontological_Slam/Edge_Agent/Random_search_V2"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

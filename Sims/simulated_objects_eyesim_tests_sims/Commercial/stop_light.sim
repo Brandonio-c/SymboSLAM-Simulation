@@ -1,0 +1,9 @@
+#Environment
+world ../../worlds/sim_objects_eyesim_testing_world.wld
+
+#objects
+object ../../environment_objects/Commercial/stop_light/stop_light.esObj
+
+
+########################
+stop_light 5000 5000 0

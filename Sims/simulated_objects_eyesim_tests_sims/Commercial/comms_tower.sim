@@ -1,0 +1,9 @@
+#Environment
+world ../../worlds/sim_objects_eyesim_testing_world.wld
+
+#objects
+object ../../environment_objects/Commercial/towers/comms/comms_tower.esObj
+
+
+########################
+comms_tower 5000 5000 0

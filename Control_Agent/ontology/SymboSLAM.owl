@@ -1,0 +1,1426 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/brandonio/ontologies/2022/1/SymboSLAM"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/brandonio/ontologies/2022/1/SymboSLAM">
+    <Prefix name="" IRI="http://www.semanticweb.org/brandonio/ontologies/2022/1/SymboSLAM"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Abandoned"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AbilitiesAndTraits"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AbstractThing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Adult"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AgentType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Airplane"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Airport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Animal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Apartment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Artificial"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AttackHelicopter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Axis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ball"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BasketballBackboard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BasketballCourt"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bathroom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bedroom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bench"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Biological"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bird"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Box"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Boy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Building"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BusStop"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bush"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Car"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CartesianPositionPoint"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Child"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Color"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Commercial"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Communication"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CommunityFacility"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Configuration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Contracting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Control"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConvenienceStore"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cylinder"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Deforming"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dimensions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DiningRoom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dog"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DynamicObjects"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Edge"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Environments"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Escaping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EscapingObstacle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EscapingOpponent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Expanding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Factory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FeatureThing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FighterJet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FireHydrant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Forming"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Garage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GasStation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GasStationPump"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Girl"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Goal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gun"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hedge"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HeightMap"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Helicopter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Horse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#House"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Humvee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hydrant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IndividualActions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IndividualContainment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Industrial"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Intent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Kangaroo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Kitchen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LandVehicle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Laundry"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Merging"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Military"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MilitaryAircraft"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Missile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MissileLauncher"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mission"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mobile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NoEye"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NonUrban"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OccupancyGrid"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OfficeBuilding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Operator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OrientationMeasure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OrientationValue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ParksAndRecreation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Plane"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Plant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pose"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Position"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Power"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PowerSubstation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Reconfigurable"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Residential"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rifle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Role"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RotationMatrix"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rotunda"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#School"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Scope"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Shape"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sheep"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ShippingContainer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Silo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Slide"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SoccerField"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SoccerGoals"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Soldier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Speed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sphere"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Spiral"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Splitting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sports"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#State"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StaticObjects"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StopLight"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StopSign"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Swarm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SwingSet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Table"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tank"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Task"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Team"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TeamActions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TeamBarrierCovering"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TeamBlanketCovering"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TeamSweepCovering"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Teamcovering"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TemporalThing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Toilet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tower"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TrafficLight"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Train"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TranslationMeasure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TransportAndServices"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tree"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UnalignedCollisionEscaping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UndefinedShape"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vehicle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Warehouse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Weapon"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Abandoned"/>
+        <Class IRI="#Building"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AbilitiesAndTraits"/>
+        <Class IRI="#Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Adult"/>
+        <Class IRI="#BasketballCourt"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Adult"/>
+        <Class IRI="#Commercial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Adult"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Adult"/>
+        <Class IRI="#School"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Adult"/>
+        <Class IRI="#SoccerField"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Agent"/>
+        <Class IRI="#AgentType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AgentType"/>
+        <Class IRI="#Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Airplane"/>
+        <Class IRI="#Airport"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Airplane"/>
+        <Class IRI="#DynamicObjects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Airport"/>
+        <Class IRI="#CommunityFacility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Animal"/>
+        <Class IRI="#DynamicObjects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Apartment"/>
+        <Class IRI="#Commercial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Apartment"/>
+        <Class IRI="#Residential"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Artificial"/>
+        <Class IRI="#AgentType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AttackHelicopter"/>
+        <Class IRI="#DynamicObjects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AttackHelicopter"/>
+        <Class IRI="#Military"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AttackHelicopter"/>
+        <Class IRI="#MilitaryAircraft"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Axis"/>
+        <Class IRI="#AbstractThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ball"/>
+        <Class IRI="#BasketballCourt"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ball"/>
+        <Class IRI="#DynamicObjects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ball"/>
+        <Class IRI="#SoccerField"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BasketballBackboard"/>
+        <Class IRI="#BasketballCourt"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BasketballBackboard"/>
+        <Class IRI="#StaticObjects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BasketballCourt"/>
+        <Class IRI="#Sports"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bathroom"/>
+        <Class IRI="#House"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bedroom"/>
+        <Class IRI="#House"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bench"/>
+        <Class IRI="#Commercial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bench"/>
+        <Class IRI="#ParksAndRecreation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bench"/>
+        <Class IRI="#School"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bench"/>
+        <Class IRI="#StaticObjects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Biological"/>
+        <Class IRI="#AgentType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bird"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bird"/>
+        <Class IRI="#NonUrban"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bird"/>
+        <Class IRI="#ParksAndRecreation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Box"/>
+        <Class IRI="#Shape"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Boy"/>
+        <Class IRI="#Child"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Boy"/>
+        <Class IRI="#School"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Building"/>
+        <Class IRI="#Airport"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Building"/>
+        <Class IRI="#Commercial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Building"/>
+        <Class IRI="#Industrial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Building"/>
+        <Class IRI="#School"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Building"/>
+        <Class IRI="#StaticObjects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Building"/>
+        <Class IRI="#TransportAndServices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bus"/>
+        <Class IRI="#Commercial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bus"/>
+        <Class IRI="#TransportAndServices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bus"/>
+        <Class IRI="#Vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BusStop"/>
+        <Class IRI="#StaticObjects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BusStop"/>
+        <Class IRI="#TransportAndServices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bush"/>
+        <Class IRI="#NonUrban"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bush"/>
+        <Class IRI="#ParksAndRecreation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bush"/>
+        <Class IRI="#StaticObjects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Car"/>
+        <Class IRI="#Car"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Car"/>
+        <Class IRI="#Commercial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Car"/>
+        <Class IRI="#Vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CartesianPositionPoint"/>
+        <Class IRI="#TranslationMeasure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cat"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cat"/>
+        <Class IRI="#Residential"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Child"/>
+        <Class IRI="#BasketballCourt"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Child"/>
+        <Class IRI="#Commercial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Child"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Child"/>
+        <Class IRI="#School"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Child"/>
+        <Class IRI="#SoccerField"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Color"/>
+        <Class IRI="#FeatureThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Commercial"/>
+        <Class IRI="#Environments"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Commercial"/>
+        <Class IRI="#StaticObjects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Communication"/>
+        <Class IRI="#Industrial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Communication"/>
+        <Class IRI="#Tower"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CommunityFacility"/>
+        <Class IRI="#Environments"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Configuration"/>
+        <Class IRI="#Swarm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Configuration"/>
+        <Class IRI="#Team"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Contracting"/>
+        <Class IRI="#TeamActions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Control"/>
+        <Class IRI="#Artificial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConvenienceStore"/>
+        <Class IRI="#Commercial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConvenienceStore"/>
+        <Class IRI="#StaticObjects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cow"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cow"/>
+        <Class IRI="#NonUrban"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cylinder"/>
+        <Class IRI="#Shape"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Deforming"/>
+        <Class IRI="#TeamActions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dimensions"/>
+        <Class IRI="#FeatureThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DiningRoom"/>
+        <Class IRI="#House"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dog"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dog"/>
+        <Class IRI="#NonUrban"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dog"/>
+        <Class IRI="#ParksAndRecreation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dog"/>
+        <Class IRI="#Residential"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Edge"/>
+        <Class IRI="#Artificial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Escaping"/>
+        <Class IRI="#Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EscapingObstacle"/>
+        <Class IRI="#Escaping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EscapingOpponent"/>
+        <Class IRI="#Escaping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Expanding"/>
+        <Class IRI="#TeamActions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Factory"/>
+        <Class IRI="#Industrial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Factory"/>
+        <Class IRI="#StaticObjects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FeatureThing"/>
+        <Class IRI="#AbstractThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fence"/>
+        <Class IRI="#Industrial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fence"/>
+        <Class IRI="#School"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fence"/>
+        <Class IRI="#StaticObjects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FighterJet"/>
+        <Class IRI="#DynamicObjects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FighterJet"/>
+        <Class IRI="#Military"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FighterJet"/>
+        <Class IRI="#MilitaryAircraft"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FireHydrant"/>
+        <Class IRI="#Industrial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FireHydrant"/>
+        <Class IRI="#StaticObjects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Forming"/>
+        <Class IRI="#TeamActions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Garage"/>
+        <Class IRI="#House"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GasStation"/>
+        <Class IRI="#Commercial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GasStation"/>
+        <Class IRI="#Industrial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GasStation"/>
+        <Class IRI="#StaticObjects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GasStation"/>
+        <Class IRI="#TransportAndServices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GasStationPump"/>
+        <Class IRI="#Commercial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GasStationPump"/>
+        <Class IRI="#GasStation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GasStationPump"/>
+        <Class IRI="#Industrial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GasStationPump"/>
+        <Class IRI="#StaticObjects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GasStationPump"/>
+        <Class IRI="#TransportAndServices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Girl"/>
+        <Class IRI="#Child"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Girl"/>
+        <Class IRI="#School"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Goal"/>
+        <Class IRI="#Mission"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gun"/>
+        <Class IRI="#Weapon"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hedge"/>
+        <Class IRI="#Bush"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hedge"/>
+        <Class IRI="#ParksAndRecreation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hedge"/>
+        <Class IRI="#StaticObjects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HeightMap"/>
+        <Class IRI="#UndefinedShape"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Helicopter"/>
+        <Class IRI="#Airport"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Helicopter"/>
+        <Class IRI="#DynamicObjects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Helicopter"/>
+        <Class IRI="#Military"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Horse"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Horse"/>
+        <Class IRI="#NonUrban"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#House"/>
+        <Class IRI="#Residential"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#House"/>
+        <Class IRI="#StaticObjects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Humvee"/>
+        <Class IRI="#Military"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Humvee"/>
+        <Class IRI="#Vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hydrant"/>
+        <Class IRI="#Commercial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hydrant"/>
+        <Class IRI="#StaticObjects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IndividualActions"/>
+        <Class IRI="#Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IndividualContainment"/>
+        <Class IRI="#Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Industrial"/>
+        <Class IRI="#Environments"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kangaroo"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kangaroo"/>
+        <Class IRI="#NonUrban"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kitchen"/>
+        <Class IRI="#House"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LandVehicle"/>
+        <Class IRI="#Military"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LandVehicle"/>
+        <Class IRI="#Vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Laundry"/>
+        <Class IRI="#House"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Merging"/>
+        <Class IRI="#TeamActions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Military"/>
+        <Class IRI="#Environments"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MilitaryAircraft"/>
+        <Class IRI="#DynamicObjects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Missile"/>
+        <Class IRI="#DynamicObjects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Missile"/>
+        <Class IRI="#Military"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MissileLauncher"/>
+        <Class IRI="#DynamicObjects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MissileLauncher"/>
+        <Class IRI="#Military"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mission"/>
+        <Class IRI="#Intent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mobile"/>
+        <Class IRI="#FeatureThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NoEye"/>
+        <Class IRI="#Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NonUrban"/>
+        <Class IRI="#Environments"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OccupancyGrid"/>
+        <Class IRI="#UndefinedShape"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OfficeBuilding"/>
+        <Class IRI="#Building"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OfficeBuilding"/>
+        <Class IRI="#Commercial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Operator"/>
+        <Class IRI="#Biological"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OrientationValue"/>
+        <Class IRI="#OrientationMeasure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ParksAndRecreation"/>
+        <Class IRI="#Environments"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Person"/>
+        <Class IRI="#DynamicObjects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Plane"/>
+        <Class IRI="#Shape"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Plant"/>
+        <Class IRI="#StaticObjects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pose"/>
+        <Class IRI="#AbstractThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Position"/>
+        <Class IRI="#AbstractThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Power"/>
+        <Class IRI="#Commercial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Power"/>
+        <Class IRI="#Tower"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PowerSubstation"/>
+        <Class IRI="#StaticObjects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PowerSubstation"/>
+        <Class IRI="#TransportAndServices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Reconfigurable"/>
+        <Class IRI="#FeatureThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Residential"/>
+        <Class IRI="#Building"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Residential"/>
+        <Class IRI="#Environments"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rifle"/>
+        <Class IRI="#Weapon"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Role"/>
+        <Class IRI="#Configuration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RotationMatrix"/>
+        <Class IRI="#OrientationMeasure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rotunda"/>
+        <Class IRI="#ParksAndRecreation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rotunda"/>
+        <Class IRI="#StaticObjects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#School"/>
+        <Class IRI="#CommunityFacility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Scope"/>
+        <Class IRI="#Task"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Shape"/>
+        <Class IRI="#FeatureThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sheep"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sheep"/>
+        <Class IRI="#NonUrban"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ShippingContainer"/>
+        <Class IRI="#Industrial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ShippingContainer"/>
+        <Class IRI="#StaticObjects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Silo"/>
+        <Class IRI="#Industrial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Silo"/>
+        <Class IRI="#StaticObjects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Slide"/>
+        <Class IRI="#ParksAndRecreation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Slide"/>
+        <Class IRI="#StaticObjects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SoccerField"/>
+        <Class IRI="#Sports"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SoccerGoals"/>
+        <Class IRI="#SoccerField"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SoccerGoals"/>
+        <Class IRI="#StaticObjects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Soldier"/>
+        <Class IRI="#DynamicObjects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Soldier"/>
+        <Class IRI="#Military"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Speed"/>
+        <Class IRI="#Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sphere"/>
+        <Class IRI="#Shape"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Spiral"/>
+        <Class IRI="#TeamActions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Splitting"/>
+        <Class IRI="#TeamActions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sports"/>
+        <Class IRI="#CommunityFacility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#State"/>
+        <Class IRI="#FeatureThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StopLight"/>
+        <Class IRI="#Commercial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StopLight"/>
+        <Class IRI="#StaticObjects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StopSign"/>
+        <Class IRI="#Commercial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StopSign"/>
+        <Class IRI="#Industrial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StopSign"/>
+        <Class IRI="#StaticObjects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Swarm"/>
+        <Class IRI="#Team"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SwingSet"/>
+        <Class IRI="#ParksAndRecreation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SwingSet"/>
+        <Class IRI="#StaticObjects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Table"/>
+        <Class IRI="#ParksAndRecreation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Table"/>
+        <Class IRI="#School"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Table"/>
+        <Class IRI="#StaticObjects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tank"/>
+        <Class IRI="#DynamicObjects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tank"/>
+        <Class IRI="#Military"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Task"/>
+        <Class IRI="#Mission"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TeamActions"/>
+        <Class IRI="#Team"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TeamBarrierCovering"/>
+        <Class IRI="#Teamcovering"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TeamBlanketCovering"/>
+        <Class IRI="#Teamcovering"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TeamSweepCovering"/>
+        <Class IRI="#Teamcovering"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Teamcovering"/>
+        <Class IRI="#Team"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TemporalThing"/>
+        <Class IRI="#AbstractThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Toilet"/>
+        <Class IRI="#House"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Toilet"/>
+        <Class IRI="#ParksAndRecreation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Toilet"/>
+        <Class IRI="#School"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Toilet"/>
+        <Class IRI="#StaticObjects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tower"/>
+        <Class IRI="#StaticObjects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TrafficLight"/>
+        <Class IRI="#Commercial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TrafficLight"/>
+        <Class IRI="#Industrial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TrafficLight"/>
+        <Class IRI="#StaticObjects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Train"/>
+        <Class IRI="#DynamicObjects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Train"/>
+        <Class IRI="#TransportAndServices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TransportAndServices"/>
+        <Class IRI="#Environments"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tree"/>
+        <Class IRI="#NonUrban"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tree"/>
+        <Class IRI="#ParksAndRecreation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tree"/>
+        <Class IRI="#School"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tree"/>
+        <Class IRI="#StaticObjects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UnalignedCollisionEscaping"/>
+        <Class IRI="#Escaping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UndefinedShape"/>
+        <Class IRI="#Shape"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vehicle"/>
+        <Class IRI="#DynamicObjects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vehicle"/>
+        <Class IRI="#Industrial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Warehouse"/>
+        <Class IRI="#Industrial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Warehouse"/>
+        <Class IRI="#StaticObjects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Weapon"/>
+        <Class IRI="#Soldier"/>
+    </SubClassOf>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

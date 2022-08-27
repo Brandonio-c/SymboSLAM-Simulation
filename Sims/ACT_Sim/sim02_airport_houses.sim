@@ -1,0 +1,19 @@
+# Sim file created 08/21/2022 11:41 PM
+
+# World File 
+world "/home/brandonio/Documents/Thesis_project_2022/EyeSim_simulation_software/EyeSim/myscripts/Project_scripts/Ontological_Slam/Sims/ACT_Sim/../worlds/ACT_Sim_02_airport.wld"
+
+
+# Robots
+LabBot 699 298 89
+
+# Objects houses
+House_V1 1698 8429 90
+House_V2 907 7756 90
+House_V1 2195 6731 90
+House_V2 2721 5121 90
+dog 1669 7814 90
+cat_v1 1640 6556 90
+cat_v1 3367 5033 90
+cat_v1 3278 4478 90
+# Objects houses

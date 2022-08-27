@@ -1,0 +1,295 @@
+#Simulation designed to test the functionmality of environment contextualisation of the SmboSLAM system
+#Simulated environment is the Gunghalin district of the Australian Capital Territory 
+#ACT Planning map used as ground truth 
+#Link: https://app2.actmapi.act.gov.au/actmapi/index.html?viewer=basic
+
+#author: Brandon Colelough
+#email: Brandon.colelough@gmail.com
+
+
+#Environment
+world ../worlds/ACT_sim_1_world.wld
+
+#set the trace on 
+#settings VIS TRACE
+
+
+
+############################----------------------------------------------------------------------------------------------------------------------object files
+###########-------------------------------------------------Commercial
+
+object ../environment_objects/Commercial/apartment/apartment_bldg.esObj
+object ../environment_objects/Commercial/Bench/Bench.esObj
+object ../environment_objects/Commercial/bldg/bldg.esObj
+object ../environment_objects/Commercial/bldg2/bldg.esObj
+object ../environment_objects/Commercial/bldg3/bldg.esObj
+object ../environment_objects/Commercial/bldg4/bldg.esObj
+object ../environment_objects/Commercial/person/builder_woman/builder_woman.esObj
+object ../environment_objects/Commercial/person/kid1/kid1.esObj
+object ../environment_objects/Commercial/person/kid2/kid2.esObj
+object ../environment_objects/Commercial/person/suit_man/suit_man.esObj
+object ../environment_objects/Commercial/bus/bus1/bus.esObj
+object ../environment_objects/Commercial/towers/comms/comms_tower.esObj
+object ../environment_objects/Commercial/car/cybertruck/cybertruck.esObj
+object ../environment_objects/Commercial/car/mitsi/mitsi.esObj
+object ../environment_objects/Commercial/car/mustang/mustang.esObj
+object ../environment_objects/Commercial/car/nissan/nissan.esObj
+object ../environment_objects/Commercial/Hydrant/Hydrant.esObj
+object ../environment_objects/Commercial/traffic_light/v2/traffic_light_v2.esObj
+object ../environment_objects/Commercial/towers/power/power_tower.esObj
+object ../environment_objects/Commercial/gas_station/gas_station.esObj
+object ../environment_objects/Commercial/stop_light/stop_light.esObj
+object ../environment_objects/Commercial/StopSign/stopsign_3.esObj
+object ../environment_objects/Commercial/stores/stores.esObj
+
+###########-------------------------------------------------Commercial
+
+###########-------------------------------------------------Community facility
+
+object ../environment_objects/Community_Facility/airport/airliner1/airliner.esObj
+object ../environment_objects/Community_Facility/airport/Helo_V1/Helo_V1.esObj
+object ../environment_objects/Community_Facility/airport/Helo_V2/Helo_V2.esObj
+object ../environment_objects/Community_Facility/basketball_courts/Basketball_Courts.esObj
+object ../environment_objects/Community_Facility/soccer_field/soccer_fields.esObj
+object ../environment_objects/Community_Facility/school/school.esObj
+
+###########-------------------------------------------------Community facility
+
+###########-------------------------------------------------Industrial
+
+object ../environment_objects/Industrial/container/container.esObj
+object ../environment_objects/Industrial/factory_v1/factory.esObj
+object ../environment_objects/Industrial/factory_v2/factory.esObj
+object ../environment_objects/Industrial/silo/silo.esObj
+object ../environment_objects/Industrial/warehouse/warehouse.esObj
+object ../environment_objects/Industrial/fence/fence.esObj
+
+###########-------------------------------------------------Industrial
+
+###########-------------------------------------------------Military
+
+object ../environment_objects/Military/attack_helo/helo.esObj
+object ../environment_objects/Military/C17/C17.esObj
+object ../environment_objects/Military/F15/F15.esObj
+object ../environment_objects/Military/JSF/JSF.esObj
+object ../environment_objects/Military/missile_launcher/missile_launcher.esObj
+object ../environment_objects/Military/missile/missile.esObj
+object ../environment_objects/Military/humvee/humvee.esObj
+object ../environment_objects/Military/tank/tank.esObj
+object ../environment_objects/Military/soldier_v1/soldier_v1.esObj
+object ../environment_objects/Military/soldier_v2/soldier_v2.esObj
+
+###########-------------------------------------------------Military
+
+###########-------------------------------------------------Non-Urban
+
+object ../environment_objects/Non_Urban/bush/bush.esObj
+object ../environment_objects/Non_Urban/trees/Tree_V1/Tree-A.esObj
+object ../environment_objects/Non_Urban/trees/Tree_V1/Tree-B.esObj
+object ../environment_objects/Non_Urban/trees/Tree_V1/Tree-C.esObj
+object ../environment_objects/Non_Urban/animals/cockatoo/cockatoo.esObj
+object ../environment_objects/Non_Urban/animals/cow/cow.esObj
+object ../environment_objects/Non_Urban/animals/kangaroo/kangaroo.esObj
+object ../environment_objects/Non_Urban/animals/sheep/sheep.esObj
+
+
+###########-------------------------------------------------Non-Urban
+
+###########-------------------------------------------------Parks and Rec
+
+object ../environment_objects/Parks_and_Rec/animals/cockatoo/cockatoo.esObj
+object ../environment_objects/Parks_and_Rec/animals/dog/dog.esObj
+object ../environment_objects/Parks_and_Rec/plants/bush/bush.esObj
+object ../environment_objects/Parks_and_Rec/plants/hedge/hedge.esObj
+object ../environment_objects/Parks_and_Rec/playground/slide/slide.esObj
+object ../environment_objects/Parks_and_Rec/playground/swings/swings.esObj
+object ../environment_objects/Parks_and_Rec/playground/table/table.esObj
+object ../environment_objects/Parks_and_Rec/playground/gazebo/gazebo.esObj
+object ../environment_objects/Parks_and_Rec/toilets/toilets.esObj
+object ../environment_objects/Parks_and_Rec/trees/Tree_V1/Tree-A.esObj
+object ../environment_objects/Parks_and_Rec/trees/Tree_V1/Tree-B.esObj
+object ../environment_objects/Parks_and_Rec/trees/Tree_V1/Tree-C.esObj
+
+
+###########-------------------------------------------------Parks and Rec
+
+###########-------------------------------------------------Residential
+
+object ../environment_objects/Residential/animals/cat_v1/cat_v1.esObj
+object ../environment_objects/Residential/animals/cat_v2/cat_v2.esObj
+object ../environment_objects/Residential/animals/dog/dog.esObj
+object ../environment_objects/Residential/House_V1/house.esObj
+object ../environment_objects/Residential/House_V2/house.esObj
+object ../environment_objects/Residential/House_V3/House_V3.esObj
+object ../environment_objects/Residential/House_V3/House_V3.esObj
+object ../environment_objects/Residential/House_V4/House_V4.esObj
+object ../environment_objects/Residential/House_V5/House_V5.esObj
+object ../environment_objects/Residential/House_V6/House_V6.esObj
+object ../environment_objects/Residential/House_V7/House_V7.esObj
+object ../environment_objects/Residential/House_V8/House_V8.esObj
+object ../environment_objects/Residential/House_V9/House_V9.esObj
+object ../environment_objects/Residential/House_V10/House_V10.esObj
+
+
+
+
+###########-------------------------------------------------Residential
+
+
+###########-------------------------------------------------Transport and Services
+
+object ../environment_objects/Transport_and_Services/bus/bus1/bus.esObj
+object ../environment_objects/Transport_and_Services/bus_stop/bus_stop.esObj
+object ../environment_objects/Transport_and_Services/train/train.esObj
+object ../environment_objects/Transport_and_Services/bldg/bldg.esObj
+object ../environment_objects/Transport_and_Services/substation/substation.esObj
+object ../environment_objects/Transport_and_Services/substation_v2/substation_v2.esObj
+
+
+###########-------------------------------------------------Transport and Services
+
+############################----------------------------------------------------------------------------------------------------------------------end of object files
+
+
+######################## Palmerston - x = 0 - 23,500 y = 52,000 - 70,000
+
+######################## Palmerston - x = 0 - 23,500 y = 52,000 - 70,000
+
+######################## Mitchell - x = 30 000 - 50, 000 y = 0 - 33,000
+
+######################## Mitchell - x = 25 000 - 50, 000 y = 0 - 30,000
+
+######################## Towncentre - x = 15 000 - 50, 000 y = 0 - 90,000
+
+######################## Towncentre - x = 15 000 - 50, 000 y = 0 - 90,000
+
+######################## Bush - x = 55 000 - 100 000, y = 0 - 30 000
+
+
+######################## Bush - x = 55 000 - 100 000, y = 0 - 30 000
+
+######################## Military - x = 0- 29 000, y = 0 - 52 000
+
+helo 10000 11000 180
+helo 10000 13000 180
+helo 10000 15000 180
+helo 10000 17000 180
+helo 10000 19000 180
+helo 10000 21000 180
+
+helo 12000 11000 180
+helo 12000 13000 180
+helo 12000 15000 180
+helo 12000 17000 180
+helo 12000 19000 180
+helo 12000 21100 180
+
+helo 14000 11000 180
+helo 14000 13000 180
+helo 14000 15000 180
+helo 14000 17000 180
+helo 14000 19000 180
+helo 14000 21000 180
+
+humvee 3000 21000 180
+humvee 3000 23000 180
+humvee 3000 25000 180
+humvee 3000 27000 180
+humvee 3000 29000 180
+humvee 3000 31000 180
+
+humvee 5000 21000 180
+humvee 5000 23000 180
+humvee 5000 25000 180
+humvee 5000 27000 180
+humvee 5000 29000 180
+humvee 5000 31000 180
+
+humvee 7000 21000 180
+humvee 7000 23000 180
+humvee 7000 25000 180
+humvee 7000 27000 180
+humvee 7000 29000 180
+humvee 7000 31000 180
+
+humvee 9000 21000 180
+humvee 9000 23000 180
+humvee 9000 25000 180
+humvee 9000 27000 180
+humvee 9000 29000 180
+humvee 9000 31000 180
+
+humvee 1000 21000 180
+humvee 1000 23000 180
+humvee 1000 25000 180
+humvee 1000 27000 180
+humvee 1000 29000 180
+humvee 1000 31000 180
+
+tank 8000 33000 0
+tank 8000 35000 0
+tank 8000 37000 0
+tank 8000 39000 0
+tank 8000 41000 0
+tank 8000 43000 0
+
+tank 10000 33000 0
+tank 10000 35000 0
+tank 10000 37000 0
+tank 10000 39000 0
+tank 10000 41000 0
+tank 10000 43000 0
+
+tank 12000 33000 0
+tank 12000 35000 0
+tank 12000 37000 0
+tank 12000 39000 0
+tank 12000 41000 0
+tank 12000 43000 0
+
+tank 14000 33000 0
+tank 14000 35000 0
+tank 14000 37000 0
+tank 14000 39000 0
+tank 14000 41000 0
+tank 14000 43000 0
+
+tank 16000 33000 0
+tank 16000 35000 0
+tank 16000 37000 0
+tank 16000 39000 0
+tank 16000 41000 0
+tank 16000 43000 0
+
+tank 18000 33000 0
+tank 18000 35000 0
+tank 18000 37000 0
+tank 18000 39000 0
+tank 18000 41000 0
+tank 18000 43000 0
+
+soldier_v1 14000 31000 180
+soldier_v1 14500 31000 180
+soldier_v1 14000 31500 180
+soldier_v1 14500 31500 180
+soldier_v1 14900 31000 180
+
+
+######################## Military - x = 0- 29 000, y = 0 - 52 000
+
+
+# Robot placement
+Labbot  700 300 90 ../Control_Agent_2/src/sim_test.py
+#Labbot  700 300 90 ../Control_Agent_2/src/main.py 3 ../Sims/start_loc/ROBOT_LOC_tst_16.txt ../Sims/test_world ../Sims/names/openimages.names F ../Sims/test_world test T ../Sims/oracle_files/oracle-16.txt ../Sims/map_images/
+
+LabBot 1500 7500 0 ../Edge_Agent/Random_search/build/Random_search.x /Third_Party/darknet/data/openimages.names /Third_Party/darknet/cfg/yolov3-openimages.cfg /Third_Party/darknet/weights/yolov3-openimages.weights
+
+#LabBot 5000 4600 0 ../Edge_Agent/Random_search/build/Random_search.x /Third_Party/darknet/data/openimages.names /Third_Party/darknet/cfg/yolov3-openimages.cfg /Third_Party/darknet/weights/yolov3-openimages.weights
+
+#LabBot 7000 400 0 ../Edge_Agent/Random_search/build/Random_search.x /Third_Party/darknet/data/openimages.names /Third_Party/darknet/cfg/yolov3-openimages.cfg /Third_Party/darknet/weights/yolov3-openimages.weights
+
+#LabBot 3250 1000 0 ../Edge_Agent/Random_search/build/Random_search.x /Third_Party/darknet/data/openimages.names /Third_Party/darknet/cfg/yolov3-openimages.cfg /Third_Party/darknet/weights/yolov3-openimages.weights
+
+#LabBot 4000 2300 90 ../Edge_Agent/Random_search/build/Random_search.x /Third_Party/darknet/data/openimages.names /Third_Party/darknet/cfg/yolov3-openimages.cfg /Third_Party/darknet/weights/yolov3-openimages.weights
+
+

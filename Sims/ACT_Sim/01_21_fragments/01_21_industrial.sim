@@ -1,0 +1,38 @@
+# Sim file created 08/13/2022 12:08 AM
+
+# World File 
+world "/home/brandonio/Documents/Thesis_project_2022/EyeSim_simulation_software/EyeSim/myscripts/Project_scripts/Ontological_Slam/Sims/ACT_Sim/../worlds/ACT_sim_1_seg_21_world.wld"
+
+
+# Robots
+LabBot 699 290 89
+
+# Objects - Industrial
+warehouse 2000 4500 350
+bldg_01 500 2000 350
+bldg_01 500 500 350
+nissan 6880 490 90
+mustang 7473 525 90
+mitsi 8172 490 90
+mitsi 8765 454 90
+mustang 9429 454 90
+nissan 10160 525 90
+nissan 10790 560 90
+mitsi 6915 1502 90
+mitsi 7508 1502 90
+mitsi 8206 1362 90
+mustang 8799 1293 90
+mustang 9429 1258 90
+nissan 10160 1362 90
+mitsi 10790 1537 90
+mitsi 6915 2410 90
+mitsi 7579 2410 90
+mitsi 8346 2270 90
+mustang 8905 2201 90
+nissan 9463 2201 90
+mustang 10266 2201 90
+mitsi 10893 2166 90
+bldg_01 1538 2514 90
+
+# Objects - Industrial
+# Markers

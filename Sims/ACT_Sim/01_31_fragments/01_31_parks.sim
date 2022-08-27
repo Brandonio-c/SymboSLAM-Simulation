@@ -1,0 +1,45 @@
+# Sim file created 08/13/2022 3:07 AM
+
+# World File 
+world "/home/brandonio/Documents/Thesis_project_2022/EyeSim_simulation_software/EyeSim/myscripts/Project_scripts/Ontological_Slam/Sims/ACT_Sim/../worlds/ACT_sim_1_seg_31_world.wld"
+
+
+# Robots
+LabBot 699 298 89
+
+# Objects - parks
+Basketball_Courts 5416 6116 90
+Tree-A 14784 15895 90
+Tree-A 16804 13200 90
+Tree-B 18999 14314 90
+Tree-B 19994 10507 90
+Tree-A 21164 7228 90
+Tree-B 18121 8634 90
+Tree-A 16657 18851 90
+Tree-A 10011 20901 90
+Tree-A 9338 19700 90
+Tree-A 9689 18090 90
+Tree-B 10861 17182 90
+Tree-A 7933 19700 90
+Tree-A 6264 19202 90
+Tree-A 6411 24501 90
+Tree-B 7259 17973 90
+Tree-B 8753 17007 90
+Tree-C 8167 18792 90
+Tree-C 7991 15573 90
+Tree-B 5416 17855 90
+Tree-C 7054 16128 90
+Tree-B 6206 16860 90
+Tree-A 4127 18295 90
+Tree-B 6499 14840 90
+Tree-B 4801 16450 90
+Tree-A 3249 17153 90
+Tree-C 5123 14314 90
+Tree-C 3571 15602 90
+Tree-B 1844 17915 90
+Tree-C 3190 13699 90
+Tree-B 1991 15309 90
+Tree-A 1141 16889 90
+Tree-C 1405 13260 90
+# objects - parks
+# Markers

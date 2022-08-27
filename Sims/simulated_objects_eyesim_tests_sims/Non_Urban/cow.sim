@@ -1,0 +1,9 @@
+#Environment
+world ../../worlds/sim_objects_eyesim_testing_world.wld
+
+#objects
+object ../../environment_objects/Non_Urban/animals/cow/cow.esObj
+
+
+########################
+cow 5000 5000 0

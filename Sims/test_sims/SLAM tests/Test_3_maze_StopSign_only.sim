@@ -1,0 +1,70 @@
+#Sim designed to test SymboSLAM system SLAM functionalities
+#Environmental objects include stop signs and cones
+#environment also has maze walls designed to test SLAM with objects not detectable by feature extraction module
+
+#author: Brandon Colelough
+#email: Brandon.colelough@gmail.com
+
+
+#Environment
+world ../../worlds/test_world_2.wld
+
+#set the trace on 
+settings VIS TRACE
+
+#objects
+object ../../objects/ParkingSign/ParkingSign.esObj
+object ../../objects/SpeedLimitSign/cancelspeedlimitsign.esObj
+object ../../objects/SpeedLimitSign/speedlimitsign.esObj
+object ../../objects/StopSign/stopsign.esObj
+
+
+# Objects
+#ParkingSign 200 4000 180
+#CancelSpeedLimitSign 4800 4000 0
+#SpeedLimitSign 200 1000 180
+#SpeedLimitSign 4800 1000 0
+
+# can palced in to allow edge agent to read depth
+#further away
+#can 750 4500 90
+#can 1750 4500 90
+#can 3250 4500 90
+#can 4250 4500 90
+
+#stop signs at rear
+#can 2000 1500 270
+#can 2500 1500 270
+
+#further away
+#can 1750 500 270
+#can 3250 500 270
+#can 4250 500 270
+
+#stop signs at front
+
+#further away
+StopSign 750 4500 90
+StopSign 1750 4500 90
+StopSign 3250 4500 90
+StopSign 4250 4500 90
+
+#stop signs at rear
+StopSign 2000 1500 270
+StopSign 2500 1500 270
+
+#further away
+StopSign 1750 500 270
+StopSign 3250 500 270
+StopSign 4250 500 270
+
+# Robot placement
+#Labbot  700 300 90 ../../../Control_Agent_2/src/sim_test.py
+Labbot  700 300 90 ../../../Control_Agent_2/src/main.py 3 ../Sims/start_loc/ROBOT_LOC_tst_16.txt ../Sims/test_world ../Sims/names/openimages.names F ../Sims/test_world ../Sims/test_world test T ../Sims/oracle_files/oracle-16.txt ../Sims/map_images/
+
+
+LabBot 2500 2300 90 ../../../Edge_Agent/Random_search/build/Random_search.x /Third_Party/darknet/cfg/coco.names /Third_Party/darknet/cfg/yolov4.cfg /Third_Party/darknet/weights/yolov4.weights 
+
+LabBot 3000 2300 90 ../../../Edge_Agent/Random_search/build/Random_search.x /Third_Party/darknet/cfg/coco.names /Third_Party/darknet/cfg/yolov4.cfg /Third_Party/darknet/weights/yolov4.weights 
+
+LabBot 3500 2300 90 ../../../Edge_Agent/Random_search/build/Random_search.x /Third_Party/darknet/cfg/coco.names /Third_Party/darknet/cfg/yolov4.cfg /Third_Party/darknet/weights/yolov4.weights 

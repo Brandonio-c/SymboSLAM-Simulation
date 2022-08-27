@@ -1,0 +1,98 @@
+#Sim designed to test SymboSLAM system SLAM functionalities
+#Environmental objects include a tree, cone, stop sign and a bench
+
+#author: Brandon Colelough
+#email: Brandon.colelough@gmail.com
+
+#Environment
+world ../../worlds/test_world_3.wld
+
+#set the trace on 
+settings VIS TRACE
+
+#objects
+object ../../objects/StopSign/stopsign_3.esObj
+object ../../objects/ConeBlue/coneblue.esObj
+object ../../objects/ConeOrange/coneorange.esObj
+object ../../objects/ConeYellow/coneyellow.esObj
+object ../../objects/SoccerBall/soccerball.esObj
+object ../../objects/Blendr/Tree/Tree-A.esObj
+object ../../objects/Blendr/Tree/Tree-B.esObj
+object ../../objects/Blendr/Tree/Tree-C.esObj
+object ../../objects/Blendr/Hydrant/Hydrant.esObj
+object ../../objects/Blendr/Bench/Bench.esObj
+
+#stop signs at front
+StopSign 0200 3000 90
+Cone-O  1400 3000 90
+Cone-Y  2500 3000 90
+Cone-B  3600 3000 90
+StopSign 4800 3000 90
+
+#further away
+Cone-B  750 4500 90
+Cone-O  1750 4500 90
+StopSign 3250 4500 90
+Cone-Y  4250 4500 90
+
+#stop signs at rear
+Cone-B  0200 1500 270
+StopSign 1400 1500 270
+Cone-O  2500 1500 270
+Cone-Y  3600 1500 270
+StopSign 4800 1500 270
+
+#further away
+StopSign 750 500 270
+Cone-Y  1750 500 270
+Cone-O  3250 500 270
+Cone-B  4250 500 270
+
+
+#Trees at the front
+Tree-A 400 2800 90
+Tree-B 1600 3200 90
+Tree-C 2600 3300 90
+Tree-A 3600 2700 90
+Tree-B 4700 3300 90
+
+#further away
+Tree-C 900 4600 90
+Tree-A 1550 4800 90
+Tree-A 3700 4500 90
+Tree-B 4400 4900 90
+
+#tree
+Tree-B 0400 1300 270
+Tree-A 1200 1700 270
+Tree-C 2300 1300 270
+Tree-B 3500 1700 270
+Tree-A 4600 1300 270
+
+#further away
+Tree-B 60 400 270
+Tree-A 1350 300 270
+Tree-C 3250 600 270
+Tree-B 4700 300 270
+
+#benches
+Bench 100 800 90
+Bench 4900 2500 270
+
+
+# Robot placement
+#Labbot  700 300 90 ../../../Control_Agent_2/src/sim_test.py
+Labbot  700 300 90 ../../../Control_Agent_2/src/main.py 3 ../Sims/start_loc/ROBOT_LOC_tst_16.txt ../Sims/test_world ../Sims/names/openimages.names F ../Sims/test_world ../Sims/test_world test T ../Sims/oracle_files/oracle-16.txt ../Sims/map_images/
+
+
+#LabBot 750 3750 0 ../../../Edge_Agent/Random_search/build/Random_search.x /Third_Party/darknet/data/openimages.names /Third_Party/darknet/cfg/yolov3-openimages.cfg /Third_Party/darknet/weights/yolov3-openimages.weights
+
+LabBot 750 3750 0 ../../../Edge_Agent/Random_search/build/Random_search.x /Third_Party/darknet/cfg/coco.names /Third_Party/darknet/cfg/yolov4.cfg /Third_Party/darknet/weights/yolov4.weights 
+
+LabBot 2500 2300 0 ../../../Edge_Agent/Random_search/build/Random_search.x /Third_Party/darknet/cfg/coco.names /Third_Party/darknet/cfg/yolov4.cfg /Third_Party/darknet/weights/yolov4.weights
+
+LabBot 3250 1000 0 ../../../Edge_Agent/Random_search/build/Random_search.x /Third_Party/darknet/cfg/coco.names /Third_Party/darknet/cfg/yolov4.cfg /Third_Party/darknet/weights/yolov4.weights
+
+LabBot 4000 2300 90 ../../../Edge_Agent/Random_search/build/Random_search.x /Third_Party/darknet/cfg/coco.names /Third_Party/darknet/cfg/yolov4.cfg /Third_Party/darknet/weights/yolov4.weights 
+
+

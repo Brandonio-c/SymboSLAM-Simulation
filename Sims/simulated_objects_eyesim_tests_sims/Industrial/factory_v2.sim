@@ -1,0 +1,9 @@
+#Environment
+world ../../worlds/sim_objects_eyesim_testing_world.wld
+
+#objects
+object ../../environment_objects/Industrial/factory_v2/factory.esObj
+
+
+########################
+factory_v2 5000 5000 0

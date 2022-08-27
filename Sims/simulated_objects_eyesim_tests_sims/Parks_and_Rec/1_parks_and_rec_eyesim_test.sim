@@ -1,0 +1,39 @@
+#Environment
+world ../worlds/sim_objects_eyesim_testing_world.wld
+
+#objects
+object ../../environment_objects/Parks_and_Rec/animals/cockatoo/cockatoo.esObj
+object ../../environment_objects/Parks_and_Rec/animals/dog/dog.esObj
+object ../../environment_objects/Parks_and_Rec/plants/bush/bush.esObj
+object ../../environment_objects/Parks_and_Rec/plants/hedge/hedge.esObj
+object ../../environment_objects/Parks_and_Rec/playground/slide/slide.esObj
+object ../../environment_objects/Parks_and_Rec/playground/swings/swings.esObj
+object ../../environment_objects/Parks_and_Rec/playground/table/table.esObj
+object ../../environment_objects/Parks_and_Rec/playground/gazebo/gazebo.esObj
+object ../../environment_objects/Parks_and_Rec/toilets/toilets.esObj
+object ../../environment_objects/Parks_and_Rec/trees/Tree_V1/Tree-A.esObj
+object ../../environment_objects/Parks_and_Rec/trees/Tree_V1/Tree-B.esObj
+object ../../environment_objects/Parks_and_Rec/trees/Tree_V1/Tree-C.esObj
+
+
+
+
+
+
+########################
+cockatoo 1000 1000 270
+dog 2000 1000 0
+bush 3000 1000 0
+hedge 4000 1000 0
+
+slide 1000 2000 90
+swings 2000 2000 0
+table 3000 2000 0
+
+
+gazebo 4000 2000 0
+toilets 5000 2000 0
+
+Tree-A 1000 3000 0
+Tree-B 2000 3000 0
+Tree-C 3000 3000 0

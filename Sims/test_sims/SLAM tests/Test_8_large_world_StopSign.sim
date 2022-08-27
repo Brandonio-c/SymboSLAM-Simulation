@@ -1,0 +1,56 @@
+#Sim designed to test SymboSLAM system SLAM functionalities
+#Environmental objects include stop signs 
+# environment is larger than usual testing facility to attempt to reduce error in simulated IMU measurements
+
+#author: Brandon Colelough
+#email: Brandon.colelough@gmail.com
+
+#Environment
+world ../../worlds/test_world_4.wld
+
+#set the trace on 
+settings VIS TRACE
+
+#objects
+object ../../objects/StopSign/stopsign_2.esObj
+
+
+#stop signs at front
+StopSign 0200 6000 90
+StopSign 2500 6000 90
+StopSign 5000 6000 90
+StopSign 7500 6000 90
+StopSign 9800 6000 90
+
+#further away
+StopSign 750 9000 90
+StopSign 3750 9000 90
+StopSign 6250 9000 90
+StopSign 9250 9000 90
+
+#stop signs at rear
+StopSign 0200 3000 270
+StopSign 2500 3000 270
+StopSign 5000 3000 270
+StopSign 7500 3000 270
+StopSign 9800 3000 270
+
+#further away
+StopSign 750 500 270
+StopSign 3750 500 270
+StopSign 6250 500 270
+StopSign 9250 500 270
+
+# Robot placement
+#Labbot  700 300 90 ../../../Control_Agent_2/src/sim_test.py
+Labbot  700 300 90 ../../../Control_Agent_2/src/main.py 3 ../Sims/start_loc/ROBOT_LOC_tst_16.txt ../Sims/test_world ../Sims/names/openimages.names F ../Sims/test_world ../Sims/test_world test T ../Sims/oracle_files/oracle-16.txt ../Sims/map_images/
+
+LabBot 2000 4500 90 ../../../Edge_Agent/Random_search/build/Random_search.x /Third_Party/darknet/cfg/coco.names /Third_Party/darknet/cfg/yolov4.cfg /Third_Party/darknet/weights/yolov4.weights 
+
+LabBot 4000 4500 90 ../../../Edge_Agent/Random_search/build/Random_search.x /Third_Party/darknet/cfg/coco.names /Third_Party/darknet/cfg/yolov4.cfg /Third_Party/darknet/weights/yolov4.weights
+
+LabBot 6000 4500 90 ../../../Edge_Agent/Random_search/build/Random_search.x /Third_Party/darknet/cfg/coco.names /Third_Party/darknet/cfg/yolov4.cfg /Third_Party/darknet/weights/yolov4.weights
+
+LabBot 8000 4500 90 ../../../Edge_Agent/Random_search/build/Random_search.x /Third_Party/darknet/cfg/coco.names /Third_Party/darknet/cfg/yolov4.cfg /Third_Party/darknet/weights/yolov4.weights 
+
+

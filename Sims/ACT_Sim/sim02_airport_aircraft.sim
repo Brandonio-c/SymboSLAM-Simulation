@@ -1,0 +1,54 @@
+# Sim file created 08/21/2022 10:55 PM
+
+# World File 
+world "/home/brandonio/Documents/Thesis_project_2022/EyeSim_simulation_software/EyeSim/myscripts/Project_scripts/Ontological_Slam/Sims/worlds/ACT_Sim_02_airport.wld"
+
+object ../environment_objects/Commercial/bldg/bldg.esObj
+object ../environment_objects/Commercial/bldg2/bldg.esObj
+object ../environment_objects/Commercial/bldg3/bldg.esObj
+object ../environment_objects/Commercial/bldg4/bldg.esObj
+object ../environment_objects/Community_Facility/airport/airliner1/airliner.esObj
+object ../environment_objects/Community_Facility/airport/Helo_V1/Helo_V1.esObj
+object ../environment_objects/Community_Facility/airport/Helo_V2/Helo_V2.esObj
+object ../environment_objects/Commercial/stores/stores.esObj
+object ../environment_objects/Military/attack_helo/helo.esObj
+object ../environment_objects/Military/C17/C17.esObj
+object ../environment_objects/Military/F15/F15.esObj
+object ../environment_objects/Military/JSF/JSF.esObj
+
+object ../environment_objects/Industrial/warehouse/warehouse.esObj
+
+
+# Robots
+LabBot 696 258 86
+
+# Objects aircraft
+bldg_01 6418 9626 90
+bldg_01 5868 10828 90
+bldg_01 7307 8453 90
+bldg_01 7671 7044 90
+bldg_01 7671 5999 90
+airliner 10986 10201 90
+airliner 7381 11010 90
+airliner 8689 8583 90
+airliner 5815 12237 90
+airliner 8585 10227 90
+airliner 9185 5737 90
+airliner 11012 20302 90
+Helo_V1 8871 4747 90
+Helo_V2 8977 3833 90
+Helo_V1 8897 3260 90
+warehouse 14052 13727 320
+warehouse 5971 18295 70
+bldg_01 17184 11413 60
+bldg_01 16540 10682 60
+stores 8694 16333 0
+Helo_V2 9192 2398 90
+helo 15135 10098 90
+helo 14724 8809 90
+F15 14256 11796 90
+JSF 13379 12088 90
+F15 12617 12469 90
+JSF 11973 12791 90
+C17 13115 10010 90
+# Objects aircraft

@@ -1,0 +1,9 @@
+#Environment
+world ../../worlds/sim_objects_eyesim_testing_world.wld
+
+#objects
+object ../../environment_objects/Commercial/gas_station/gas_station.esObj
+
+
+########################
+gas_station 5000 5000 0

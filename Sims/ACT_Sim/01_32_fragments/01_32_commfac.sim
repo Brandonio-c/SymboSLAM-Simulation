@@ -1,0 +1,14 @@
+# Sim file created 08/13/2022 3:32 AM
+
+# World File 
+world "/home/brandonio/Documents/Thesis_project_2022/EyeSim_simulation_software/EyeSim/myscripts/Project_scripts/Ontological_Slam/Sims/ACT_Sim/../worlds/ACT_sim_1_seg_32_world.wld"
+
+
+# Robots
+LabBot 699 298 89
+
+# Objects
+school 14166 16388 90
+stores 15375 13846 90
+bldg_01 14209 12517 90
+# Markers

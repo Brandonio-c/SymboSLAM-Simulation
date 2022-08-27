@@ -1,0 +1,9 @@
+#Environment
+world ../../worlds/sim_objects_eyesim_testing_world.wld
+
+#objects
+object ../../environment_objects/Community_Facility/airport/airliner1/airliner.esObj
+
+
+########################
+airliner 5000 5000 0

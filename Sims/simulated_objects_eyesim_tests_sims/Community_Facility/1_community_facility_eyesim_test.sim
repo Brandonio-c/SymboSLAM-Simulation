@@ -1,0 +1,23 @@
+#Environment
+world ../worlds/sim_objects_eyesim_testing_world.wld
+
+#objects
+object ../../environment_objects/Community_Facility/airport/airliner1/airliner.esObj
+object ../../environment_objects/Community_Facility/airport/Helo_V1/Helo_V1.esObj
+object ../../environment_objects/Community_Facility/airport/Helo_V2/Helo_V2.esObj
+object ../../environment_objects/Community_Facility/basketball_courts/Basketball_Courts.esObj
+object ../../environment_objects/Community_Facility/soccer_field/soccer_fields.esObj
+object ../../environment_objects/Community_Facility/school/school.esObj
+
+
+
+
+
+
+########################
+airliner 1000 1000 0
+Helo_V1 3000 1500 0
+Helo_V2 4000 1500 0
+#Basketball_Courts 6000 2000 0
+#soccer_fields 8000 2000 0
+school 3000 3000 270

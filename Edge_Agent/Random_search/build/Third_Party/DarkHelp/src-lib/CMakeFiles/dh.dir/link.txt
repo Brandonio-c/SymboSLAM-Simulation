@@ -1,0 +1,2 @@
+/usr/bin/ar qc libdarkhelp.a CMakeFiles/dh.dir/DarkHelpConfig.cpp.o CMakeFiles/dh.dir/DarkHelpNN.cpp.o CMakeFiles/dh.dir/DarkHelpPredictionResult.cpp.o CMakeFiles/dh.dir/DarkHelpUtils.cpp.o
+/usr/bin/ranlib libdarkhelp.a

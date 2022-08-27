@@ -1,0 +1,9 @@
+#Environment
+world ../../worlds/sim_objects_eyesim_testing_world.wld
+
+#objects
+object ../../environment_objects/Commercial/bldg3/bldg.esObj
+
+
+########################
+bldg_03 5000 5000 0

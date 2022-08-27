@@ -1,0 +1,11 @@
+width 10000
+height 10000
+
+floor_texture ../texture/floor_text1.png
+
+#side walls
+0 0 0 10000
+0 10000 10000 10000
+10000 10000 10000 0
+10000 0 0 0 
+

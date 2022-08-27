@@ -1,0 +1,30 @@
+#Environment
+world ../worlds/sim_objects_eyesim_testing_world.wld
+
+#objects
+object ../../environment_objects/Non_Urban/bush/bush.esObj
+object ../../environment_objects/Non_Urban/trees/Tree_V1/Tree-A.esObj
+object ../../environment_objects/Non_Urban/trees/Tree_V1/Tree-B.esObj
+object ../../environment_objects/Non_Urban/trees/Tree_V1/Tree-C.esObj
+
+object ../../environment_objects/Non_Urban/animals/cockatoo/cockatoo.esObj
+object ../../environment_objects/Non_Urban/animals/cow/cow.esObj
+object ../../environment_objects/Non_Urban/animals/kangaroo/kangaroo.esObj
+object ../../environment_objects/Non_Urban/animals/sheep/sheep.esObj
+
+
+
+
+
+
+
+########################
+bush 1000 2000 0
+Tree-A 2000 2000 0
+Tree-B 3000 2000 0
+Tree-C 4000 2000 0
+
+cockatoo 1000 1000 270
+cow 2000 1000 0
+kangaroo 3000 1000 270
+sheep 4000 1000 0

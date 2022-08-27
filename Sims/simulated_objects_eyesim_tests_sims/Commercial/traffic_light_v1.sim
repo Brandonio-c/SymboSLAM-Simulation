@@ -1,0 +1,9 @@
+#Environment
+world ../../worlds/sim_objects_eyesim_testing_world.wld
+
+#objects
+object ../../environment_objects/Commercial/traffic_light/v1/traffic_light_v1.esObj
+
+
+########################
+traffic_light_v1 5000 5000 0

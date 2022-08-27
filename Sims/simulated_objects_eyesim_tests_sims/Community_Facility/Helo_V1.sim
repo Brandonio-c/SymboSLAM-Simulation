@@ -1,0 +1,9 @@
+#Environment
+world ../../worlds/sim_objects_eyesim_testing_world.wld
+
+#objects
+object ../../environment_objects/Community_Facility/airport/Helo_V1/Helo_V1.esObj
+
+
+########################
+Helo_V1 5000 5000 0

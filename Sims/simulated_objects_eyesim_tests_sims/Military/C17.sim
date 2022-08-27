@@ -1,0 +1,9 @@
+#Environment
+world ../../worlds/sim_objects_eyesim_testing_world.wld
+
+#objects
+object ../../environment_objects/Military/C17/C17.esObj
+
+
+########################
+C17 5000 5000 0

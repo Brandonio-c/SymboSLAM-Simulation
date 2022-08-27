@@ -1,0 +1,8 @@
+#Environment
+world ../../worlds/sim_objects_eyesim_testing_world.wld
+
+#objects
+object ../../environment_objects/Transport_and_Services/bus_stop/bus_stop.esObj
+
+########################
+bus_stop 5000 5000 0

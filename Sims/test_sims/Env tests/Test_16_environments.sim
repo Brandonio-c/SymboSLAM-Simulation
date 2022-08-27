@@ -1,0 +1,172 @@
+#Simulation designed to test the functionmality of environment contextualisation through the SmboSLAM system
+#testing world is basic 
+
+#author: Brandon Colelough
+#email: Brandon.colelough@gmail.com
+
+#Environment
+world ../../worlds/test_world_16.wld
+
+#set the trace on 
+#settings VIS TRACE
+
+
+
+#objects
+object ../../objects/StopSign/stopsign_3.esObj
+object ../../objects/ConeBlue/coneblue.esObj
+object ../../objects/ConeOrange/coneorange.esObj
+object ../../objects/ConeYellow/coneyellow.esObj
+object ../../objects/SoccerBall/soccerball.esObj
+object ../../objects/Blendr/Tree/Tree-A.esObj
+object ../../objects/Blendr/Tree/Tree-B.esObj
+object ../../objects/Blendr/Tree/Tree-C.esObj
+object ../../objects/Blendr/Hydrant/Hydrant.esObj
+object ../../objects/Blendr/Bench/Bench.esObj
+object ../../objects/Blendr/bldg/bldg.esObj
+object ../../objects/Blendr/tank/tank.esObj
+object ../../objects/Blendr/helo/helo.esObj
+object ../../objects/Blendr/humvee/humvee.esObj
+object ../../objects/Blendr/playground/swings.esObj
+object ../../objects/Blendr/playground/slide.esObj
+object ../../objects/Blendr/playground/table.esObj
+object ../../objects/Blendr/playground/gazebo.esObj
+object ../../objects/Blendr/light/light.esObj
+object ../../objects/Blendr/house_v2/house_v2.esObj
+object ../../objects/Blendr/house_v3/house_v3.esObj
+
+
+######################### City area - x = 0-2k, y = 0-2.5k
+
+#buildings
+bldg 0400 1200 180
+bldg 0400 3200 180
+
+bldg 2400 0400 90
+
+bldg 2600 2000 270
+bldg 2600 3000 270
+
+bldg 4600 2000 90
+bldg 4600 3000 90
+
+Hydrant 7600 800 0
+
+Bench 6000 800 180
+Bench 5600 800 180
+
+StopSign 1000 4400 0
+StopSign 1000 800 0
+
+
+#light 2000 2500 270
+
+
+
+
+######################### Military area - x = 2.5k - 5 k, y = 0 - 2k
+
+tank 8000 2000 200
+tank 8000 4000 150
+helo 7000 3000 0
+humvee 8400 1100 180
+humvee 9000 3000 270
+
+
+
+
+######################### Bushland area - x = 0 - 2k, y = 2.5 k - 5 k
+
+#trees
+#r1
+Tree-A 100 5000 270
+Tree-B 100 6000 270
+Tree-C 100 7000 270
+Tree-A 100 8000 270
+Tree-B 100 9000 270
+Tree-C 100 9900 270
+
+#r2
+
+Tree-B 1200 5000 270
+Tree-C 1200 6000 270
+Tree-C 1200 7000 270
+Tree-B 1200 8000 270
+Tree-B 1200 9000 270
+Tree-A 1200 9900 270
+
+#r3
+
+Tree-C 2200 5000 270
+Tree-A 2200 6000 270
+Tree-A 2200 7000 270
+Tree-B 2200 8000 270
+Tree-B 2200 9000 270
+Tree-A 2200 9900 270
+
+#r4
+
+Tree-B 3200 5000 270
+Tree-B 3200 6000 270
+Tree-C 3200 7000 270
+Tree-C 3200 8000 270
+Tree-A 3200 9000 270
+Tree-A 3200 9900 270
+
+
+
+######################### Suburbia - x = 2 k - 5 k, y = 2k - 5 k
+
+#stop signs 
+StopSign 9600 8100 0
+StopSign 5900 5000 90
+StopSign 6900 5000 90
+StopSign 6900 7200 90
+StopSign 7400 7400 0
+
+#houses
+house_v3 5000 6000 270
+house_v3 5000 7800 270
+house_v2 6400 9200 270
+house_v2 8400 9200 270
+Hydrant 5900 8200 0
+
+
+
+######################### Park - x = 3.5k - 5k, y = 2.5k - 5k
+
+#benches
+Bench 9000 5000 180
+Bench 8800 5200 270
+
+#trees
+Tree-A 8000 5400 270
+Tree-B 9400 7600 270
+Tree-C 9400 5400 270
+swings 8600 6000 0
+slide 9400 6600 0 
+gazebo 7400 6000 0
+table 9000 7200 90
+table 8200 7200 90
+
+
+##########################
+ 
+
+
+
+# Robot placement
+#Labbot  700 300 90 ../../../Control_Agent_2/src/sim_test.py
+Labbot  700 300 90 ../../../Control_Agent_2/src/main.py 3 ../Sims/start_loc/ROBOT_LOC_tst_16.txt ../Sims/test_world ../Sims/names/openimages.names F ../Sims/test_world ../Sims/test_world test T ../Sims/oracle_files/oracle-16.txt ../Sims/map_images/
+
+LabBot 1500 7500 0 ../../../Edge_Agent/Random_search_V2/build/Random_search.x /Third_Party/darknet/data/openimages.names /Third_Party/darknet/cfg/yolov3-openimages.cfg /Third_Party/darknet/weights/yolov3-openimages.weights
+
+#LabBot 5000 4600 0 ../../../Edge_Agent/Random_search/build/Random_search.x /Third_Party/darknet/data/openimages.names /Third_Party/darknet/cfg/yolov3-openimages.cfg /Third_Party/darknet/weights/yolov3-openimages.weights
+
+#LabBot 7000 400 0 ../../../Edge_Agent/Random_search/build/Random_search.x /Third_Party/darknet/data/openimages.names /Third_Party/darknet/cfg/yolov3-openimages.cfg /Third_Party/darknet/weights/yolov3-openimages.weights
+
+#LabBot 3250 1000 0 ../../../Edge_Agent/Random_search/build/Random_search.x /Third_Party/darknet/data/openimages.names /Third_Party/darknet/cfg/yolov3-openimages.cfg /Third_Party/darknet/weights/yolov3-openimages.weights
+
+#LabBot 4000 2300 90 ../../../Edge_Agent/Random_search/build/Random_search.x /Third_Party/darknet/data/openimages.names /Third_Party/darknet/cfg/yolov3-openimages.cfg /Third_Party/darknet/weights/yolov3-openimages.weights
+
+

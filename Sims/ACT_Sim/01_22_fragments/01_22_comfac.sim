@@ -1,0 +1,16 @@
+# Sim file created 08/13/2022 1:27 AM
+
+# World File 
+world "/home/brandonio/Documents/Thesis_project_2022/EyeSim_simulation_software/EyeSim/myscripts/Project_scripts/Ontological_Slam/Sims/ACT_Sim/../worlds/ACT_sim_1_seg_22_world.wld"
+
+
+# Robots
+LabBot 699 298 89
+
+# Objects - ComFac
+school 878 11415 180
+school 14461 1349 90
+school 15042 4399 90
+school 17730 13442 90
+# Objects - ComFac
+# Markers

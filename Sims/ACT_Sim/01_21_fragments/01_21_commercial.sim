@@ -1,0 +1,57 @@
+# Sim file created 08/13/2022 12:27 AM
+
+# World File 
+world "/home/brandonio/Documents/Thesis_project_2022/EyeSim_simulation_software/EyeSim/myscripts/Project_scripts/Ontological_Slam/Sims/ACT_Sim/../worlds/ACT_sim_1_seg_21_world.wld"
+
+
+# Robots
+LabBot 699 299 89
+
+# Objects - Commercial
+apartment_bldg 7727 6789 90
+apartment_bldg 8080 8693 90
+apartment_bldg 8489 10420 90
+bus 8098 18042 90
+apartment_bldg 9322 13580 90
+apartment_bldg 9555 15154 90
+bldg_01 9758 16671 90
+stop_light 4890 6145 90
+Hydrant 9555 16204 90
+stop_light 4627 4920 90
+stop_light 6493 4454 90
+stop_light 6639 5650 90
+traffic_light_v2 7835 18332 90
+traffic_light_v2 9613 17779 90
+stores 8272 23377 180
+bldg_04 10401 17982 90
+bldg_04 7019 19762 90
+bldg_01 7193 20695 90
+Bench 7222 18770 90
+Bench 9847 17370 90
+bus 9351 20607 90
+bldg_01 10430 19149 90
+bldg_04 10808 20490 90
+bus 8418 14951 90
+stop_light 7456 16262 90
+suit_man 10196 16116 90
+suit_man 6902 19004 90
+suit_man 10313 19877 90
+suit_man 9672 12676 90
+suit_man 7923 20898 90
+builder_woman 11158 19731 90
+builder_woman 7777 20140 90
+suit_man 9818 18798 90
+suit_man 9672 17399 90
+Hydrant 10371 21831 90
+bldg_04 10954 22123 90
+bldg_01 11217 23697 90
+bldg_01 11275 24630 90
+Bench 8069 21365 90
+Bench 10401 21511 90
+suit_man 8184 22064 90
+suit_man 8825 24542 90
+builder_woman 8447 22910 90
+suit_man 8330 22444 90
+suit_man 8710 24193 90
+# Objects - Commercial
+# Markers

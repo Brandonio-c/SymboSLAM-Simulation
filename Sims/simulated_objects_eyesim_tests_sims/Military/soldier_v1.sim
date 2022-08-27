@@ -1,0 +1,9 @@
+#Environment
+world ../../worlds/sim_objects_eyesim_testing_world.wld
+
+#objects
+object ../../environment_objects/Military/soldier_v1/soldier_v1.esObj
+
+
+########################
+soldier_v1 5000 5000 0

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/../../.." vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../.." vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Third_Party/DarkHelp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Third_Party/DarkHelp_dep" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Third_Party/Depreciated/YOLOv3_CPP_API_WRAPPER" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Third_Party/Depreciated/darkflow" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Third_Party/Depreciated/darknet" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Third_Party/Depreciated/darknet_broken" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Third_Party/Depreciated/darknet_broken_2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Third_Party/Depreciated/darknet_broken_2/build_release/darknet" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Third_Party/Depreciated/darknet_broken_3" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Third_Party/YOLOv3_CPP_API_WRAPPER" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Third_Party/darknet" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Third_Party/darknet_broken" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Third_Party/darknet_broken_2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Third_Party/darknet_broken_2/build_release/darknet" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/YOLO_DLL/darknet" vcs="Git" />
+  </component>
+</project>

@@ -1,0 +1,56 @@
+# Sim file created 08/12/2022 11:53 PM
+
+# World File 
+world "/home/brandonio/Documents/Thesis_project_2022/EyeSim_simulation_software/EyeSim/myscripts/Project_scripts/Ontological_Slam/Sims/ACT_Sim/../worlds/ACT_sim_1_seg_20_world.wld"
+
+
+# Robots
+LabBot 699 290 89
+
+# Objects
+warehouse 6918 18357 90
+warehouse 7905 22384 90
+Tree-A 277 21517 90
+Tree-A 790 21837 90
+Tree-B 936 22657 90
+Tree-A 1112 23389 90
+Tree-A 1405 24150 90
+Tree-C 1931 24588 90
+Tree-C 614 24237 90
+Tree-C 439 23358 90
+Tree-C 234 22481 90
+Tree-B 9836 17416 90
+Tree-B 11241 17475 90
+Tree-A 10684 19085 90
+Tree-C 12149 18792 90
+Tree-A 10480 21778 90
+Tree-B 10831 23535 90
+Tree-A 10568 20432 90
+Tree-B 13817 17562 90
+Tree-B 14138 19407 90
+Tree-A 12382 20519 90
+Tree-A 12617 21895 90
+Tree-A 13466 23008 90
+kangaroo 18853 4302 90
+kangaroo 20287 3335 90
+kangaroo 20052 2515 90
+kangaroo 20696 2691 90
+Tree-C 14959 21662 90
+cockatoo 5034 4711 90
+Tree-C 12968 15162 90
+cockatoo 5298 9248 90
+cockatoo 5123 13992 90
+cockatoo 7201 14254 90
+kangaroo 19877 11357 90
+kangaroo 20141 11619 90
+kangaroo 20434 11064 90
+kangaroo 19730 10976 90
+kangaroo 19468 11650 90
+kangaroo 19204 11182 90
+kangaroo 19233 10625 90
+kangaroo 18793 11561 90
+kangaroo 19819 2926 90
+kangaroo 19437 2369 90
+kangaroo 19291 3306 90
+kangaroo 19701 3687 90
+# Markers

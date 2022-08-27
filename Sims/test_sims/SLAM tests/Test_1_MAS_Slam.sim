@@ -1,0 +1,31 @@
+#Sim designed to test SymboSLAM system SLAM functionalities
+
+#author: Brandon Colelough
+#email: Brandon.colelough@gmail.com
+
+
+# Default Environment
+world ../../worlds/world_walls.wld
+#world ./worlds/world_rectangle.wld
+settings VIS TRACE
+
+
+# Robot placement
+#Labbot  700 300 90 ../../../Control_Agent_2/src/sim_test.py
+Labbot  700 300 90 ../../../Control_Agent_2/src/main.py 3 ../Sims/start_loc/ROBOT_LOC_tst_16.txt ../Sims/test_world ../Sims/names/openimages.names F ../Sims/test_world ../Sims/test_world test T ../Sims/oracle_files/oracle-16.txt ../Sims/map_images/
+
+LabBot 5000 6000 0 ../../../Edge_Agent/Random_search/build/Random_search.x /Third_Party/darknet/cfg/coco.names /Third_Party/darknet/cfg/yolov4.cfg /Third_Party/darknet/weights/yolov4.weights 
+
+LabBot 5500 5500 315 ../../../Edge_Agent/Random_search/build/Random_search.x /Third_Party/darknet/cfg/coco.names /Third_Party/darknet/cfg/yolov4.cfg /Third_Party/darknet/weights/yolov4.weights 
+
+LabBot 6000 5000 270 ../../../Edge_Agent/Random_search/build/Random_search.x /Third_Party/darknet/cfg/coco.names /Third_Party/darknet/cfg/yolov4.cfg /Third_Party/darknet/weights/yolov4.weights 
+
+LabBot 5500 4500 225 ../../../Edge_Agent/Random_search/build/Random_search.x /Third_Party/darknet/cfg/coco.names /Third_Party/darknet/cfg/yolov4.cfg /Third_Party/darknet/weights/yolov4.weights 
+
+LabBot 5000 4000 180 ../../../Edge_Agent/Random_search/build/Random_search.x /Third_Party/darknet/cfg/coco.names /Third_Party/darknet/cfg/yolov4.cfg /Third_Party/darknet/weights/yolov4.weights 
+
+LabBot 4500 4500 135 ../../../Edge_Agent/Random_search/build/Random_search.x /Third_Party/darknet/cfg/coco.names /Third_Party/darknet/cfg/yolov4.cfg /Third_Party/darknet/weights/yolov4.weights 
+
+LabBot 4000 5000 90 ../../../Edge_Agent/Random_search/build/Random_search.x /Third_Party/darknet/cfg/coco.names /Third_Party/darknet/cfg/yolov4.cfg /Third_Party/darknet/weights/yolov4.weights 
+
+LabBot 4500 5500 45 ../../../Edge_Agent/Random_search/build/Random_search.x /Third_Party/darknet/cfg/coco.names /Third_Party/darknet/cfg/yolov4.cfg /Third_Party/darknet/weights/yolov4.weights 

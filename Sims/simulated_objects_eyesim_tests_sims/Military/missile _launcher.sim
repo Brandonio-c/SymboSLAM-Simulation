@@ -1,0 +1,9 @@
+#Environment
+world ../../worlds/sim_objects_eyesim_testing_world.wld
+
+#objects
+object ../../environment_objects/Military/missile_launcher/missile_launcher.esObj
+
+
+########################
+missile_launcher 5000 5000 0

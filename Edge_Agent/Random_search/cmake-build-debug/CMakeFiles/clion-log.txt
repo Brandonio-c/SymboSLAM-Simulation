@@ -1,0 +1,30 @@
+/snap/clion/190/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/snap/clion/190/bin/ninja/linux/ninja -DCMAKE_C_COMPILER=/usr/local/bin/gccsim -DCMAKE_CXX_COMPILER=/usr/local/bin/g++sim -G Ninja -S /home/brandonio/Documents/Thesis_project_2022/EyeSim_simulation_software/EyeSim/myscripts/Project_scripts/Ontological_Slam/Edge_Agent/Random_search_V2 -B /home/brandonio/Documents/Thesis_project_2022/EyeSim_simulation_software/EyeSim/myscripts/Project_scripts/Ontological_Slam/Edge_Agent/Random_search_V2/cmake-build-debug
+-- The C compiler identification is GNU 9.4.0
+-- The CXX compiler identification is GNU 9.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/local/bin/gccsim - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/local/bin/g++sim - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+Build type: Debug
+-- Found OpenCV: /usr (found suitable version "4.2.0", minimum required is "4.0.0") 
+Building ver: 1.4.14-1
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Found OpenCV: /usr (found version "4.2.0") 
+-- Configuring done
+WARNING: Target "Random_search.x" requests linking to directory "/home/brandonio/Documents/Thesis_project_2022/EyeSim_simulation_software/EyeSim/myscripts/Project_scripts/Ontological_Slam/Edge_Agent/Random_search_V2/Third_Party/DarkHelp".  Targets may link only to libraries.  CMake is dropping the item.
+-- Generating done
+-- Build files have been written to: /home/brandonio/Documents/Thesis_project_2022/EyeSim_simulation_software/EyeSim/myscripts/Project_scripts/Ontological_Slam/Edge_Agent/Random_search_V2/cmake-build-debug

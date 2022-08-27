@@ -1,0 +1,9 @@
+#Environment
+world ../../worlds/sim_objects_eyesim_testing_world.wld
+
+#objects
+object ../../environment_objects/Commercial/StopSign/stopsign_3.esObj
+
+
+########################
+StopSign  5000 5000 0

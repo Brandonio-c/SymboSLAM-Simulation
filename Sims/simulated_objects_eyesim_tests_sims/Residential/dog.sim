@@ -1,0 +1,9 @@
+#Environment
+world ../../worlds/sim_objects_eyesim_testing_world.wld
+
+#objects
+object ../../environment_objects/Residential/animals/dog/dog.esObj
+
+
+########################
+dog 5000 5000 0

@@ -1,0 +1,65 @@
+#Sim designed to test SymboSLAM system SLAM functionalities
+#Environmental objects include trees, hydrant, bench and stop signs 
+
+#author: Brandon Colelough
+#email: Brandon.colelough@gmail.com
+
+
+#Environment
+world ../../worlds/test_world_3.wld
+
+#set the trace on 
+settings VIS TRACE
+
+#objects
+object ../../objects/StopSign/stopsign_3.esObj
+object ../../objects/Blendr/Tree/Tree-A.esObj
+object ../../objects/Blendr/Tree/Tree-B.esObj
+object ../../objects/Blendr/Tree/Tree-C.esObj
+object ../../objects/Blendr/Hydrant/Hydrant.esObj
+object ../../objects/Blendr/Bench/Bench.esObj
+
+#stop signs at front
+Hydrant 0200 3000 90
+Tree-A 1400 3000 90
+StopSign 2500 3000 90
+Tree-B 3600 3000 90
+Bench 4800 3000 0
+
+#further away
+Tree-C 750 4500 90
+StopSign 1750 4500 90
+Tree-A 3250 4500 90
+StopSign 4250 4500 90
+
+#stop signs at rear
+Tree-B 0200 1500 270
+Hydrant 1400 1500 270
+Tree-C 2500 1500 270
+StopSign 3600 1500 270
+Tree-A 4800 1500 270
+
+#further away
+Tree-B 750 500 270
+Hydrant 1750 500 270
+Tree-C 3250 500 270
+StopSign 4250 500 270
+
+
+
+
+
+
+# Robot placement
+#Labbot  700 300 90 ../../../Control_Agent_2/src/sim_test.py
+Labbot  700 300 90 ../../../Control_Agent_2/src/main.py 3 ../Sims/start_loc/ROBOT_LOC_tst_16.txt ../Sims/test_world ../Sims/names/openimages.names F ../Sims/test_world ../Sims/test_world test T ../Sims/oracle_files/oracle-16.txt ../Sims/map_images/
+
+LabBot 750 3750 0 ../../../Edge_Agent/Random_search/build/Random_search.x /Third_Party/darknet/cfg/coco.names /Third_Party/darknet/cfg/yolov4.cfg /Third_Party/darknet/weights/yolov4.weights 
+
+LabBot 2500 2300 0 ../../../Edge_Agent/Random_search/build/Random_search.x /Third_Party/darknet/cfg/coco.names /Third_Party/darknet/cfg/yolov4.cfg /Third_Party/darknet/weights/yolov4.weights
+
+LabBot 3250 1000 0 ../../../Edge_Agent/Random_search/build/Random_search.x /Third_Party/darknet/cfg/coco.names /Third_Party/darknet/cfg/yolov4.cfg /Third_Party/darknet/weights/yolov4.weights
+
+#LabBot 4000 2300 90 ../../../Edge_Agent/Random_search/build/Random_search.x /Third_Party/darknet/cfg/coco.names /Third_Party/darknet/cfg/yolov4.cfg /Third_Party/darknet/weights/yolov4.weights 
+
+

@@ -1,0 +1,41 @@
+#Environment
+world ../worlds/sim_objects_eyesim_testing_world.wld
+
+#objects
+object ../../environment_objects/Residential/animals/cat_v1/cat_v1.esObj
+object ../../environment_objects/Residential/animals/cat_v2/cat_v2.esObj
+object ../../environment_objects/Residential/animals/dog/dog.esObj
+object ../../environment_objects/Residential/House_V1/house.esObj
+object ../../environment_objects/Residential/House_V2/house.esObj
+object ../../environment_objects/Residential/House_V3/House_V3.esObj
+object ../../environment_objects/Residential/House_V3/House_V3.esObj
+object ../../environment_objects/Residential/House_V4/House_V4.esObj
+object ../../environment_objects/Residential/House_V5/House_V5.esObj
+object ../../environment_objects/Residential/House_V6/House_V6.esObj
+object ../../environment_objects/Residential/House_V7/House_V7.esObj
+object ../../environment_objects/Residential/House_V8/House_V8.esObj
+object ../../environment_objects/Residential/House_V9/House_V9.esObj
+object ../../environment_objects/Residential/House_V10/House_V10.esObj
+
+
+
+
+
+
+########################
+cat_v1 300 1000 0
+cat_v2 700 1000 0
+dog 500 500 0
+
+House_V1 1500 1000 90
+House_V2 2700 1000 180
+House_V3 4000 1000 270
+
+House_V4 1000 2500 180
+House_V5 2500 2500 180
+House_V6 4000 2500 270
+
+House_V7 750 4000 90
+House_V8 2000 4000 90
+House_V10 3000 4000 270
+House_V9 4500 4000 90

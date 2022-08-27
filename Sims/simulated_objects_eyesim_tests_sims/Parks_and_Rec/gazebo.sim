@@ -1,0 +1,9 @@
+#Environment
+world ../../worlds/sim_objects_eyesim_testing_world.wld
+
+#objects
+object ../../environment_objects/Parks_and_Rec/playground/gazebo/gazebo.esObj
+
+
+########################
+gazebo 5000 5000 0

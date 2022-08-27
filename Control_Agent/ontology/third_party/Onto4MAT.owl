@@ -1,0 +1,3606 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/swarmShepherdingOntology/hst-go#"
+     xml:base="http://www.semanticweb.org/swarmShepherdingOntology/hst-go"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:Onto4MAT="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#"
+     xmlns:ontoclean-dl="http://www.meteck.org/teaching/ontologies/ontoclean-dl.owl#"
+     xmlns:coressov3-maxax="http://www.semanticweb.org/swarmShepherdingOntology/coreSSOv3-maxAx#"
+     xmlns:coreSSOcleanVersion="http://www.semanticweb.org/swarmShepherdingOntology/coreSSOcleanVersion#"
+     xmlns:untitled-ontology-40="http://www.semanticweb.org/ajh/ontologies/2021/10/untitled-ontology-40#">
+    <owl:Ontology rdf:about="http://swarmshepherding.net/swarmontologies/Onto4MAT.owl">
+        <owl:versionIRI rdf:resource="http://swarmshepherding.net/swarmontologies/Onto4MAT.owl"/>
+        <dc:creator xml:lang="en">Adam J Hepworth</dc:creator>
+        <dc:creator xml:lang="en">Daniel P Baxter</dc:creator>
+        <dc:publisher xml:lang="en">University of New South Wales</dc:publisher>
+        <dc:rights xml:lang="en">&quot;http://creativecommons.org/licenses/by/4.0/&quot;</dc:rights>
+        <dc:title xml:lang="en">Onto4MAT: Ontology for Multi-Agent Teaming</dc:title>
+        <terms:license xml:lang="en">Onto4MAT</terms:license>
+        <terms:license xml:lang="en">https://creativecommons.org/licenses/by-nc-sa/2.0/
+Creative Commons Attribution-NonCommercial-ShareAlike (CC BY-NC-SA) license</terms:license>
+        <rdfs:comment xml:lang="en">&quot;Onto4MAT&quot; by &quot;Adam J Hepworth and Daniel P Baxter&quot; is licenced under CC BY-NC-SA</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/publisher -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/rights -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#abilityAndTraitIsDoneByAgent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#abilityAndTraitIsDoneByAgent">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentDoesAnAbilityAndTrait"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#AbilitiesTraits"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+        <rdfs:label>abilityAndTraitsDoneByAgent</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentAffectedByEnvironment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentAffectedByEnvironment">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#environmentAffectsAgent"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Environment"/>
+        <rdfs:label>agentAffectedByEnvironment</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentControlledByAgent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentControlledByAgent">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentControlsAgent"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+        <rdfs:label>agentControlledByAgent</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentControlsAgent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentControlsAgent">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+        <rdfs:label>agentControlsAgent</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentDoesAnAbilityAndTrait -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentDoesAnAbilityAndTrait">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#AbilitiesTraits"/>
+        <rdfs:label>agentDoesAnAbilityAndTrait</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentDoesAnIndividualAction -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentDoesAnIndividualAction">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#individualActionDoneByAgent"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualActions"/>
+        <rdfs:label>agentDoesIndividualAction</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentDoesAnIndividualTactic -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentDoesAnIndividualTactic">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#individualTacticDoneByAgent"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualTactic"/>
+        <rdfs:label>agentDoesAnIndividualTactic</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentHasAnIntent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentHasAnIntent">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#intentForAgent"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Intent"/>
+        <rdfs:label>agentHasAnIntent</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentHasGoal -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentHasGoal">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#goalForAgent"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Goal"/>
+        <rdfs:label>agentHasGoal</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentHasPlan -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentHasPlan">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#planForAgent"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Mission"/>
+        <rdfs:label>agentHasPlan</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentHasTask -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentHasTask">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#taskForAgent"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Task"/>
+        <rdfs:label>agentHasTask</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentHasType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentHasType">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#typeOfAgent"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#AgentType"/>
+        <rdfs:label>agentHasType</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentInfluencedByCollectiveAction -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentInfluencedByCollectiveAction">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#collectiveActionInfluencesAgent"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#TeamActions"/>
+        <rdfs:label>agentInfluencedByCollectiveAction</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentInfluencedByCollectiveTactic -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentInfluencedByCollectiveTactic">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#collectiveTacticInfluencesAgent"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#TeamTactic"/>
+        <rdfs:label>agentInfluencedByCollectiveTactic</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentInfluencedByIndividualTactic -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentInfluencedByIndividualTactic">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#individualTacticInfluencesAgent"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualTactic"/>
+        <rdfs:label>agentInfluencedByIndividualTactic</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentInfluencesTeam -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentInfluencesTeam">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#teamInfluencedByAgent"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Team"/>
+        <rdfs:label>agentInfluencesTeam</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentInflunencedByIndividualAction -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentInflunencedByIndividualAction">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#individualActionInfluencesAgent"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualActions"/>
+        <rdfs:label>agentInfluencedByIndividualAction</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentMemberOfTeam -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentMemberOfTeam">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#teamHasAgent"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Team"/>
+        <rdfs:label>agentMemberOfTeam</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentTypeHasAgent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentTypeHasAgent">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#isAgentType"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#AgentType"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+        <rdfs:label>agentTypeHasAgent</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#collectiveActionDoneByTeam -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#collectiveActionDoneByTeam">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#teamDoesCollectiveAction"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#TeamActions"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Team"/>
+        <rdfs:label>collectiveActionDoneByTeam</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#collectiveActionInfluencesAgent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#collectiveActionInfluencesAgent">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#TeamActions"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+        <rdfs:label>collectiveActionInfluencesAgent</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#collectiveActionInfluencesTeam -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#collectiveActionInfluencesTeam">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#teamInfluencedByCollectiveAction"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#TeamActions"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Team"/>
+        <rdfs:label>collectiveActionInfluencesTeam</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#collectiveTacticDoneByTeam -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#collectiveTacticDoneByTeam">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#teamDoesCollectiveTactic"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#TeamTactic"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Team"/>
+        <rdfs:label>collectiveTacticDoneByTeam</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#collectiveTacticInfluencesAgent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#collectiveTacticInfluencesAgent">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#TeamTactic"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+        <rdfs:label>collectiveTacticInfluencesAgent</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#collectiveTacticInfluencesTeam -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#collectiveTacticInfluencesTeam">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#teamInfluncedByCollectiveTactic"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#TeamTactic"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Team"/>
+        <rdfs:label>collectiveTacticInfluencesTeam</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#environmentAffectsAgent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#environmentAffectsAgent">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Environment"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+        <rdfs:label>environmentAffectsAgent</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#environmentAffectsTeam -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#environmentAffectsTeam">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#teamAffectedByEnvironment"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Environment"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Team"/>
+        <rdfs:label>environmentAffectsTeam</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#environmentHasAnEnvironment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#environmentHasAnEnvironment">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#environmentIsPartOfAnEnvironment"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Environment"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Environment"/>
+        <rdfs:label>environmentHasAnEnvironment</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#environmentIsPartOfAnEnvironment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#environmentIsPartOfAnEnvironment">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Environment"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Environment"/>
+        <rdfs:label>environmentIsPartOfAnEnvironment</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#formationForTeam -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#formationForTeam">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#teamHasFormation"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Formation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Team"/>
+        <rdfs:label>formationForTeam</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#goalForAgent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#goalForAgent">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Goal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+        <rdfs:label>goalForAgent</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#individualActionDoneByAgent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#individualActionDoneByAgent">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualActions"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+        <rdfs:label>individualActionDoneByAgent</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#individualActionInfluencesAgent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#individualActionInfluencesAgent">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualActions"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+        <rdfs:label>individualActionInfluencesAgent</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#individualActionInfluencesTeam -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#individualActionInfluencesTeam">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#teamInfluencedByIndividualAction"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualActions"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Team"/>
+        <rdfs:label>individualActionInfluencesTeam</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#individualTacticDoneByAgent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#individualTacticDoneByAgent">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualTactic"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+        <rdfs:label>individualTacticDoneByAgent</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#individualTacticInfluencesAgent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#individualTacticInfluencesAgent">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualTactic"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+        <rdfs:label>individualTacticInfluencesAgent</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#individualTacticInfluencesTeam -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#individualTacticInfluencesTeam">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#teamInfluncedByIndividualTactic"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualTactic"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Team"/>
+        <rdfs:label>individualTacticInfluencesTeam</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#intentForAgent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#intentForAgent">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Intent"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+        <rdfs:label>intentForAgent</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#intentForTeam -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#intentForTeam">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#teamHasIntent"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Intent"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Team"/>
+        <rdfs:label>intentForTeam</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#isAgentType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#isAgentType">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#AgentType"/>
+        <rdfs:label>isAgentType</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#planForAgent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#planForAgent">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Mission"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+        <rdfs:label>planForAgent</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#synchMechForTeam -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#synchMechForTeam">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#teamHasSyncMech"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#SynchronisationMechanism"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Team"/>
+        <rdfs:label>synchMechForTeam</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#taskForAgent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#taskForAgent">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Task"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+        <rdfs:label>taskForAgent</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#teamAffectedByEnvironment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#teamAffectedByEnvironment">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Team"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Environment"/>
+        <rdfs:label>teamAffectedByEnvironment</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#teamDoesCollectiveAction -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#teamDoesCollectiveAction">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Team"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#TeamActions"/>
+        <rdfs:label>teamDoesCollectiveAction</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#teamDoesCollectiveTactic -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#teamDoesCollectiveTactic">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Team"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#TeamTactic"/>
+        <rdfs:label>teamDoesCollectiveTactic</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#teamHasAgent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#teamHasAgent">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Team"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+        <rdfs:label>teamHasAgent</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#teamHasFormation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#teamHasFormation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Team"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Formation"/>
+        <rdfs:label>teamHasFormation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#teamHasIntent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#teamHasIntent">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Team"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Intent"/>
+        <rdfs:label>teamHasIntent</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#teamHasSyncMech -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#teamHasSyncMech">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Team"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#SynchronisationMechanism"/>
+        <rdfs:label>teamHasSyncMech</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#teamInfluencedByAgent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#teamInfluencedByAgent">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Team"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+        <rdfs:label>teamInfluencedByAgent</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#teamInfluencedByCollectiveAction -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#teamInfluencedByCollectiveAction">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Team"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#TeamActions"/>
+        <rdfs:label>teamInfluencedByCollectiveAction</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#teamInfluencedByIndividualAction -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#teamInfluencedByIndividualAction">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Team"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualActions"/>
+        <rdfs:label>teamInfluencedByIndividualAction</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#teamInfluncedByCollectiveTactic -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#teamInfluncedByCollectiveTactic">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Team"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#TeamTactic"/>
+        <rdfs:label>teamInfluencedByCollectiveTactic</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#teamInfluncedByIndividualTactic -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#teamInfluncedByIndividualTactic">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Team"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualTactic"/>
+        <rdfs:label>teamInfluencedByIndividualTactic</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#typeOfAgent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#typeOfAgent">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#AgentType"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+        <rdfs:label>typeOfAgent</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#hasAlignmentWithTeam -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#hasAlignmentWithTeam">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:label>hasAlignmentWithTeam</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#hasCohesionWithTeam -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#hasCohesionWithTeam">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:label>hasCohesionWithTeam</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#hasDistanceToGoal -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#hasDistanceToGoal">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:label>hasDistanceToGoal</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#hasEnergy -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#hasEnergy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:label>hasEnergy</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#hasHeading -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#hasHeading">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:label>hasHeading</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#hasInfluence -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#hasInfluence">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:label>hasInfluence</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#hasSeparationToNearestNeighbour -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#hasSeparationToNearestNeighbour">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Team"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:label>hasSeparationToNearestNeighbour</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#hasSpeed -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#hasSpeed">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:label>hasSpeed</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#hasTeamAlignment -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#hasTeamAlignment">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Team"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:label>hasTeamAlignment</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#hasTeamCohesion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#hasTeamCohesion">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Team"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:label>hasTeamCohesion</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#hasTeamMembers -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#hasTeamMembers">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Team"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>hasTeamMembers</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#hasTeamSeparation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#hasTeamSeparation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Team"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:label>hasTeamSeparation</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#paddockSize -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#paddockSize">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#xLocation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#xLocation">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#yLocation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#yLocation">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#AbilitiesTraits -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#AbilitiesTraits">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentDoesAnAbilityAndTrait"/>
+                        <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>AbilitiesAndTraits</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Actions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Actions">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentDoesAnIndividualAction"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualActions"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Team"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#teamDoesCollectiveAction"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#TeamActions"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>Actions</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#AgentType"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentDoesAnAbilityAndTrait"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#AbilitiesTraits"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#AgentType"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentDoesAnIndividualAction"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualActions"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#AgentType"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentDoesAnIndividualTactic"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualTactic"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>Agent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#AgentType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#AgentType">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentHasType"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Artificial"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Biological"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+        <rdfs:label>AgentType</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Alert -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Alert">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualActions"/>
+        <rdfs:label>Alert</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Alignment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Alignment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualActions"/>
+        <rdfs:label>Alignment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Anxious -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Anxious">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Temperament"/>
+        <rdfs:label>Anxious</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#ArcFormation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#ArcFormation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Formation"/>
+        <rdfs:label>ArcFormation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Arriving -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Arriving">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualActions"/>
+        <rdfs:label>Arriving</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Artificial -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Artificial">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#AgentType"/>
+        <rdfs:label>Artificial</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Asynchronous -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Asynchronous">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#SynchronisationMechanism"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Synchronous"/>
+        <rdfs:label>Asynchronous</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#AtomicActions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#AtomicActions">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualActions"/>
+        <rdfs:label>AtomicActions</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Avoiding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Avoiding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualActions"/>
+        <rdfs:label>Avoiding</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Aware -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Aware">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualActions"/>
+        <rdfs:label>Aware</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Balance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Balance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#AbilitiesTraits"/>
+        <rdfs:label>Balance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#BehaviourProfile -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#BehaviourProfile">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#AbilitiesTraits"/>
+        <rdfs:label>BehaviourProfile</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Biological -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Biological">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#AgentType"/>
+        <rdfs:label>Biological</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#BlindCast -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#BlindCast">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Cast"/>
+        <rdfs:label>BlindCast</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#BlindSearchingCast -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#BlindSearchingCast">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Cast"/>
+        <rdfs:label>BlindSearchingCast</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Block -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Block">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualActions"/>
+        <rdfs:label>Block</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#BlockHold -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#BlockHold">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentDoesAnIndividualAction"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Block"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentDoesAnIndividualAction"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Hold"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualActions"/>
+        <rdfs:label>BlockAndHold</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Bold -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Bold">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Temperament"/>
+        <rdfs:label>Bold</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Break -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Break">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentDoesAnIndividualAction"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#BreakawayBreak"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#CastingBreak"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#PressureBreak"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#SquareBreak"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualActions"/>
+        <rdfs:label>Break</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#BreakawayBreak -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#BreakawayBreak">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Break"/>
+        <rdfs:label>BreakawayBreak</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Calm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Calm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Temperament"/>
+        <rdfs:label>Calm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Cast -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Cast">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentDoesAnIndividualAction"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#BlindCast"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#BlindSearchingCast"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#SightedCast"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#SightedShortCast"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualActions"/>
+        <rdfs:label>Cast</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#CastMuster -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#CastMuster">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentDoesAnAbilityAndTrait"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#MusteringAbility"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentDoesAnIndividualAction"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Cast"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#AbilitiesTraits"/>
+        <rdfs:label>CastAndMuster</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#CastingBreak -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#CastingBreak">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Break"/>
+        <rdfs:label>CastingBreak</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#ClockSynchronisation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#ClockSynchronisation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Synchronous"/>
+        <rdfs:label>ClockSynchronisation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Cohesion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Cohesion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualActions"/>
+        <rdfs:label>Cohesion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Configuration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Configuration">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentDoesAnAbilityAndTrait"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#BehaviourProfile"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Team"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#teamHasFormation"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Formation"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Swarm"/>
+        <rdfs:label>Configuration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Containment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Containment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualTactic"/>
+        <rdfs:label>Containment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Contracting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Contracting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#TeamActions"/>
+        <rdfs:label>Contracting</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#ControlledBite -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#ControlledBite">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#AbilitiesTraits"/>
+        <rdfs:label>ControlledBite</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#ControlledForce -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#ControlledForce">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentDoesAnAbilityAndTrait"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Cast"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentDoesAnAbilityAndTrait"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#HoldingAbility"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#AbilitiesTraits"/>
+        <rdfs:label>ControlledForce</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Cover -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Cover">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentDoesAnIndividualAction"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#MobCover"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#ShortCover"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#SquareCover"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualActions"/>
+        <rdfs:label>Cover</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Deforming -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Deforming">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#TeamActions"/>
+        <rdfs:label>Deforming</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Desire -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Desire">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#AbilitiesTraits"/>
+        <rdfs:label>Desire</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Distance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Distance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#AbilitiesTraits"/>
+        <rdfs:label>Distance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Docking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Docking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualActions"/>
+        <rdfs:label>Docking</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Draw -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Draw">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#AbilitiesTraits"/>
+        <rdfs:label>Draw</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Drive -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Drive">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualActions"/>
+        <rdfs:label>Drive</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#DrivingAbility -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#DrivingAbility">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#AbilitiesTraits"/>
+        <rdfs:label>DrivingAbility</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#DrivingInstinct -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#DrivingInstinct">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#AbilitiesTraits"/>
+        <rdfs:label>DrivingInstinct</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#EchelonFormation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#EchelonFormation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Formation"/>
+        <rdfs:label>EchelonFormation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Environment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Environment">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>Environment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Erratic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Erratic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#BehaviourProfile"/>
+        <rdfs:label>Erratic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Escaping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Escaping">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentDoesAnIndividualAction"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#EscapingObstacle"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#EscapingOpponent"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#UnalignedCollisionEscaping"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualActions"/>
+        <rdfs:label>Escaping</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#EscapingObstacle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#EscapingObstacle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Escaping"/>
+        <rdfs:label>EscapingObstacle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#EscapingOpponent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#EscapingOpponent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Escaping"/>
+        <rdfs:label>EscapingOpponent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Evading -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Evading">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualActions"/>
+        <rdfs:label>Evading</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Expanding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Expanding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#TeamActions"/>
+        <rdfs:label>Expanding</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Exploring -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Exploring">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#TeamTactic"/>
+        <rdfs:label>Exploring</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Eye -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Eye">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#AbilitiesTraits"/>
+        <rdfs:label>Eye</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Fence -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Fence">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Paddock"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Gate"/>
+        <rdfs:label>Fence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#FixedOrderAsynchronisation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#FixedOrderAsynchronisation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Asynchronous"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#RandomAsynchronisation"/>
+        <rdfs:label>FixedOrderAsynchronisation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Fleeing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Fleeing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualActions"/>
+        <rdfs:label>Fleeing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Flocking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Flocking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualActions"/>
+        <rdfs:label>Flocking</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#FlowFieldFollowing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#FlowFieldFollowing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Following"/>
+        <rdfs:label>FlowFieldFollowing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Following -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Following">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentDoesAnIndividualAction"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#FlowFieldFollowing"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#GoalFollowing"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#GroupFollowing"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#LeaderFollower"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#NearestNeighbourFollowing"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#PathFollowing"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#WallFollowing"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualActions"/>
+        <rdfs:label>Following</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Foraging -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Foraging">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#TeamTactic"/>
+        <rdfs:label>Foraging</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Formation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Formation">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>Formation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Forming -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Forming">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#TeamActions"/>
+        <rdfs:label>Forming</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#FourFingerFormation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#FourFingerFormation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Formation"/>
+        <rdfs:label>FourFingerFormation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#FreeEye -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#FreeEye">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentDoesAnAbilityAndTrait"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#NoEye"/>
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#PressureEye"/>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Eye"/>
+        <rdfs:label>FreeEye</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#FreedomOfMovement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#FreedomOfMovement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#AbilitiesTraits"/>
+        <rdfs:label>FreedomOfMovement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Gate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Gate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Paddock"/>
+        <rdfs:label>Gate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Goal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Goal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Mission"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Task"/>
+        <rdfs:label>Goal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#GoalFollowing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#GoalFollowing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Following"/>
+        <rdfs:label>GoalFollowing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Graze -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Graze">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualActions"/>
+        <rdfs:label>Graze</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Gregarious -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Gregarious">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Temperament"/>
+        <rdfs:label>Gregarious</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#GroupFollowing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#GroupFollowing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Following"/>
+        <rdfs:label>GroupFollowing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#HeadingInstinct -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#HeadingInstinct">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentDoesAnAbilityAndTrait"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#DrivingInstinct"/>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#AbilitiesTraits"/>
+        <rdfs:label>HeadingInstinct</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Herding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Herding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#TeamTactic"/>
+        <rdfs:label>Herding</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Hiding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Hiding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualActions"/>
+        <rdfs:label>Hiding</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Hold -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Hold">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualActions"/>
+        <rdfs:label>Hold</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#HoldObstacle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#HoldObstacle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Obstacle"/>
+        <rdfs:label>HoldObstacle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#HoldTogether -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#HoldTogether">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#AbilitiesTraits"/>
+        <rdfs:label>HoldTogether</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#HoldingAbility -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#HoldingAbility">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#AbilitiesTraits"/>
+        <rdfs:label>HoldingAbility</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualActions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualActions">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentDoesAnIndividualAction"/>
+                        <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Actions"/>
+        <rdfs:label>IndividualActions</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualBarrierCovering -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualBarrierCovering">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualCovering"/>
+        <rdfs:label>IndividualBarrierCovering</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualBlanketCovering -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualBlanketCovering">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualCovering"/>
+        <rdfs:label>IndividualBlanketCovering</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualCovering -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualCovering">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentDoesAnIndividualTactic"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualBarrierCovering"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualBlanketCovering"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualSweepCovering"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualTactic"/>
+        <rdfs:label>IndividualContainment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualHerding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualHerding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualTactic"/>
+        <rdfs:label>IndividualHerding</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualSweepCovering -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualSweepCovering">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualCovering"/>
+        <rdfs:label>IndividualSweepCovering</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualTactic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualTactic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Tactic"/>
+        <rdfs:label>IndividualTactic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Intelligent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Intelligent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Temperament"/>
+        <rdfs:label>Intelligent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Intent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Intent">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>Intent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Interposing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Interposing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualActions"/>
+        <rdfs:label>Interposing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#KeepOnOwnSide -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#KeepOnOwnSide">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#AbilitiesTraits"/>
+        <rdfs:label>KeepOnOwnSide</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Leader -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Leader">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#BehaviourProfile"/>
+        <rdfs:label>Leader</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#LeaderFollower -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#LeaderFollower">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Following"/>
+        <rdfs:label>LeaderFollower</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#LineFormation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#LineFormation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Formation"/>
+        <rdfs:label>LineFormation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Merging -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Merging">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#TeamActions"/>
+        <rdfs:label>Merging</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#MinimalActivity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#MinimalActivity">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentDoesAnIndividualAction"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Cover"/>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#AbilitiesTraits"/>
+        <rdfs:label>MinimalActivity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Mission -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Mission">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Intent"/>
+        <rdfs:comment>Synonym for &quot;Plan&quot; in this context</rdfs:comment>
+        <rdfs:label>Mission</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#MobControl -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#MobControl">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#AbilitiesTraits"/>
+        <rdfs:label>MobControl</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#MobCover -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#MobCover">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Cover"/>
+        <rdfs:label>MobCover</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#MobFollower -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#MobFollower">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#BehaviourProfile"/>
+        <rdfs:label>MobFollower</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#MusteringAbility -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#MusteringAbility">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#AbilitiesTraits"/>
+        <rdfs:label>MusteringAbility</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#NarrowPassNavigation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#NarrowPassNavigation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Navigating"/>
+        <rdfs:label>NarrowPassNavigation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#NaturalLift -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#NaturalLift">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#AbilitiesTraits"/>
+        <rdfs:label>NaturalLift</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#NaturalPull -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#NaturalPull">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#AbilitiesTraits"/>
+        <rdfs:label>NaturalPull</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#NaturalStop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#NaturalStop">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#AbilitiesTraits"/>
+        <rdfs:label>NaturalStop</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Navigating -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Navigating">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#TeamTactic"/>
+        <rdfs:label>Navigating</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Navigation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Navigation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualTactic"/>
+        <rdfs:label>Navigation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#NearestNeighbourFollowing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#NearestNeighbourFollowing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Following"/>
+        <rdfs:label>NearestNeighbourFollowing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#NoEye -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#NoEye">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentDoesAnAbilityAndTrait"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#FreeEye"/>
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#PressureEye"/>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Eye"/>
+        <rdfs:label>NoEye</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Obstacle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Obstacle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Environment"/>
+        <rdfs:label>Obstacle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#ObstacleNegotiation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#ObstacleNegotiation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualActions"/>
+        <rdfs:label>ObstacleNegotiation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#OffsetPursuing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#OffsetPursuing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualActions"/>
+        <rdfs:label>OffsetPursuing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Outrunning -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Outrunning">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualTactic"/>
+        <rdfs:label>Outrunning</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Paddock -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Paddock">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Environment"/>
+        <rdfs:label>Paddock</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#PathFollowing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#PathFollowing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Following"/>
+        <rdfs:label>PathFollowing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Patrolling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Patrolling">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualTactic"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#TeamTactic"/>
+        <rdfs:comment>Definition: 
+&quot;Team prevention of another team from exiting an area or keeping it at a fixed distance.&quot;
+
+Reference: H.A. Abbass and R.A. Hunjet. Smart Shepherding: Towards Transparent Artificial Intelligence Enabled Human-Swarm Teams. In H.A. Abbass and R.A. Hunjet, editors, Shepherding UxVs for Human-Swarm Teaming, chapter 7, pages 131–164. Springer, Cham., 2021.</rdfs:comment>
+        <rdfs:label>Patrolling</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Penning -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Penning">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualTactic"/>
+        <rdfs:label>Penning</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#PredationRisk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#PredationRisk">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#BehaviourProfile"/>
+        <rdfs:label>PredationRisk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#PressureBreak -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#PressureBreak">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Break"/>
+        <rdfs:label>PressureBreak</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#PressureEye -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#PressureEye">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentDoesAnAbilityAndTrait"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#FreeEye"/>
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#NoEye"/>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Eye"/>
+        <rdfs:label>PressureEye</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Pursuing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Pursuing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualActions"/>
+        <rdfs:label>Pursuing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Quiet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Quiet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#BehaviourProfile"/>
+        <rdfs:label>Quiet</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#RandomAsynchronisation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#RandomAsynchronisation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Asynchronous"/>
+        <rdfs:label>RandomAsynchronisation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#RandomMovement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#RandomMovement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualActions"/>
+        <rdfs:label>RandomMovement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Role -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Role">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentDoesAnAbilityAndTrait"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#BehaviourProfile"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Configuration"/>
+        <rdfs:label>Role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Scope -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Scope">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Task"/>
+        <rdfs:label>Scope</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Search -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Search">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#AbilitiesTraits"/>
+        <rdfs:label>Search</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Seeking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Seeking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualActions"/>
+        <rdfs:label>Seeking</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Separation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Separation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualActions"/>
+        <rdfs:label>Separation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Shadowing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Shadowing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualActions"/>
+        <rdfs:label>Shadowing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Sheep -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Sheep">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentMemberOfTeam"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Team"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#isAgentType"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Biological"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Biological"/>
+        <rdfs:label>Sheep</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Sheepdog -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Sheepdog">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentControlledByAgent"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Shepherd"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentHasGoal"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Goal"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentHasTask"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Task"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#isAgentType"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Biological"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Biological"/>
+        <rdfs:label>Sheepdog</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Shepherd -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Shepherd">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentControlsAgent"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Sheepdog"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentControlsAgent"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#SkyShepherd"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentHasGoal"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Intent"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#isAgentType"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Biological"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Biological"/>
+        <rdfs:label>Shepherd</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#ShortCover -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#ShortCover">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Cover"/>
+        <rdfs:label>ShortCover</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Shy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Shy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Temperament"/>
+        <rdfs:label>Shy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#SightedCast -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#SightedCast">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Cast"/>
+        <rdfs:label>SightedCast</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#SightedShortCast -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#SightedShortCast">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Cast"/>
+        <rdfs:label>SightedShortCast</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Singling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Singling">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualTactic"/>
+        <rdfs:label>Singling</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#SkyShepherd -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#SkyShepherd">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentControlledByAgent"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Shepherd"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentHasGoal"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Goal"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentHasTask"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Task"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#isAgentType"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Artificial"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Artificial"/>
+        <rdfs:label>SkyShepherd</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Speed -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Speed">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentDoesAnAbilityAndTrait"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Steadiness"/>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#AbilitiesTraits"/>
+        <rdfs:label>Speed</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Spiral -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Spiral">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#TeamActions"/>
+        <rdfs:label>Spiral</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Splitting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Splitting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#TeamActions"/>
+        <rdfs:label>Splitting</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#SquareBreak -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#SquareBreak">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Break"/>
+        <rdfs:label>SquareBreak</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#SquareCover -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#SquareCover">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Cover"/>
+        <rdfs:label>SquareCover</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#StateSynchronisation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#StateSynchronisation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Synchronous"/>
+        <rdfs:label>StateSynchronisation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Steadiness -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Steadiness">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentDoesAnAbilityAndTrait"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Speed"/>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#AbilitiesTraits"/>
+        <rdfs:label>Steadiness</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#StimuliSynchronisation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#StimuliSynchronisation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Synchronous"/>
+        <rdfs:label>StimuliSynchronisation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Strength -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Strength">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#AbilitiesTraits"/>
+        <rdfs:label>Strength</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Swarm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Swarm">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Team"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#teamHasFormation"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Configuration"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Team"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#teamHasIntent"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Intent"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Team"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#teamHasSyncMech"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#SynchronisationMechanism"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>Swarm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#SynchronisationMechanism -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#SynchronisationMechanism">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>SynchronisationMechanism</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Synchronous -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Synchronous">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#SynchronisationMechanism"/>
+        <rdfs:label>Synchronous</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Tactic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Tactic">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#agentDoesAnIndividualTactic"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualTactic"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Team"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#teamDoesCollectiveTactic"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#TeamTactic"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>Tactic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Task -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Task">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Mission"/>
+        <rdfs:label>Task</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Team -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Team">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#teamDoesCollectiveAction"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#TeamActions"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#teamDoesCollectiveTactic"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#TeamTactic"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#teamHasAgent"/>
+                                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                                <owl:onClass rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Agent"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>Team</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#TeamActions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#TeamActions">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Team"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#teamDoesCollectiveAction"/>
+                        <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Actions"/>
+        <rdfs:label>TeamActions</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#TeamBarrierCovering -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#TeamBarrierCovering">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#TeamCovering"/>
+        <rdfs:label>TeamBarrierCovering</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#TeamBlanketCovering -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#TeamBlanketCovering">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#TeamCovering"/>
+        <rdfs:label>TeamBlanketCovering</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#TeamCovering -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#TeamCovering">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Team"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#teamDoesCollectiveTactic"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#TeamBarrierCovering"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#TeamBlanketCovering"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#TeamSweepCovering"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#TeamTactic"/>
+        <rdfs:label>TeamCovering</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#TeamSweepCovering -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#TeamSweepCovering">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#TeamCovering"/>
+        <rdfs:label>TeamSweepCovering</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#TeamTactic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#TeamTactic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Tactic"/>
+        <rdfs:label>TeamTactic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Temperament -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Temperament">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#AbilitiesTraits"/>
+        <rdfs:label>Temperament</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#TestData -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#TestData">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#UnalignedCollisionEscaping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#UnalignedCollisionEscaping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Escaping"/>
+        <rdfs:comment>Definition: 
+&quot;Predict future locations of neighbours and accelerate or decelerate to get to the expected collision site before or after the intruder (thereby avoiding the collision).&quot;
+
+Reference: H.A. Abbass and R.A. Hunjet. Smart Shepherding: Towards Transparent Artificial Intelligence Enabled Human-Swarm Teams. In H.A. Abbass and R.A. Hunjet, editors, Shepherding UxVs for Human-Swarm Teaming, chapter 7, pages 131–164. Springer, Cham., 2021.</rdfs:comment>
+        <rdfs:label>UnalignedCollisionEscaping</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#VeeFormation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#VeeFormation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Formation"/>
+        <rdfs:label>VeeFormation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#WallFollowing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#WallFollowing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Following"/>
+        <rdfs:comment>Definition: 
+&quot;Approach a wall then maintain certain distance.&quot;
+
+Reference: H.A. Abbass and R.A. Hunjet. Smart Shepherding: Towards Transparent Artificial Intelligence Enabled Human-Swarm Teams. In H.A. Abbass and R.A. Hunjet, editors, Shepherding UxVs for Human-Swarm Teaming, chapter 7, pages 131–164. Springer, Cham., 2021.</rdfs:comment>
+        <rdfs:label>WallFollowing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Wandering -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Wandering">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualActions"/>
+        <rdfs:label>Wandering</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Width -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Width">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#AbilitiesTraits"/>
+        <rdfs:label>Width</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#attract -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#attract">
+        <rdf:type rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#AtomicActions"/>
+        <Onto4MAT:individualActionDoneByAgent rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#sheep1"/>
+        <Onto4MAT:individualActionDoneByAgent rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#sheep2"/>
+        <Onto4MAT:individualActionDoneByAgent rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#sheep3"/>
+        <Onto4MAT:individualActionInfluencesAgent rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#sheepdog"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#collect -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#collect">
+        <rdf:type rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#AtomicActions"/>
+        <Onto4MAT:individualActionDoneByAgent rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#sheepdog"/>
+        <Onto4MAT:individualActionInfluencesAgent rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#sheep1"/>
+        <Onto4MAT:individualActionInfluencesAgent rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#sheep2"/>
+        <Onto4MAT:individualActionInfluencesAgent rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#sheep3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#drive -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#drive">
+        <rdf:type rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#AtomicActions"/>
+        <Onto4MAT:individualActionDoneByAgent rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#sheepdog"/>
+        <Onto4MAT:individualActionInfluencesAgent rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#sheep1"/>
+        <Onto4MAT:individualActionInfluencesAgent rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#sheep2"/>
+        <Onto4MAT:individualActionInfluencesAgent rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#sheep3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#fence -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#fence">
+        <rdf:type rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Fence"/>
+        <Onto4MAT:environmentAffectsAgent rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#sheep1"/>
+        <Onto4MAT:environmentAffectsAgent rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#sheep2"/>
+        <Onto4MAT:environmentAffectsAgent rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#sheep3"/>
+        <Onto4MAT:environmentAffectsAgent rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#sheepdog"/>
+        <Onto4MAT:environmentHasAnEnvironment rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#paddock"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#flocking -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#flocking">
+        <rdf:type rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Flocking"/>
+        <Onto4MAT:collectiveActionDoneByTeam rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#herd"/>
+        <Onto4MAT:collectiveActionInfluencesAgent rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#sheepdog"/>
+        <Onto4MAT:collectiveActionInfluencesAgent rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#shepherd"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#gate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#gate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Gate"/>
+        <Onto4MAT:environmentAffectsAgent rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#sheep1"/>
+        <Onto4MAT:environmentAffectsAgent rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#sheep2"/>
+        <Onto4MAT:environmentAffectsAgent rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#sheep3"/>
+        <Onto4MAT:environmentAffectsAgent rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#sheepdog"/>
+        <Onto4MAT:environmentIsPartOfAnEnvironment rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#paddock"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#goalLocation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#goalLocation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Goal"/>
+        <Onto4MAT:goalForAgent rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#sheepdog"/>
+        <Onto4MAT:xLocation rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</Onto4MAT:xLocation>
+        <Onto4MAT:yLocation rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</Onto4MAT:yLocation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#herd -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#herd">
+        <rdf:type rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Team"/>
+        <Onto4MAT:teamDoesCollectiveTactic rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#flocking"/>
+        <Onto4MAT:teamHasAgent rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#sheep1"/>
+        <Onto4MAT:teamHasAgent rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#sheep2"/>
+        <Onto4MAT:teamHasAgent rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#sheep3"/>
+        <Onto4MAT:hasTeamMembers rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</Onto4MAT:hasTeamMembers>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#holdObstacle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#holdObstacle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#HoldObstacle"/>
+        <Onto4MAT:environmentAffectsAgent rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#sheep1"/>
+        <Onto4MAT:environmentAffectsAgent rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#sheep2"/>
+        <Onto4MAT:environmentAffectsAgent rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#sheep3"/>
+        <Onto4MAT:environmentAffectsAgent rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#sheepdog"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#jitter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#jitter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#AtomicActions"/>
+        <Onto4MAT:individualActionDoneByAgent rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#sheep1"/>
+        <Onto4MAT:individualActionDoneByAgent rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#sheep2"/>
+        <Onto4MAT:individualActionDoneByAgent rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#sheep3"/>
+        <Onto4MAT:individualActionDoneByAgent rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#sheepdog"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#paddock -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#paddock">
+        <rdf:type rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Paddock"/>
+        <Onto4MAT:environmentHasAnEnvironment rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#fence"/>
+        <Onto4MAT:environmentHasAnEnvironment rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#gate"/>
+        <Onto4MAT:paddockSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">150</Onto4MAT:paddockSize>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#repel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#repel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#AtomicActions"/>
+        <Onto4MAT:individualActionDoneByAgent rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#sheep1"/>
+        <Onto4MAT:individualActionDoneByAgent rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#sheep2"/>
+        <Onto4MAT:individualActionDoneByAgent rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#sheep3"/>
+        <Onto4MAT:individualActionInfluencesAgent rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#sheepdog"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#sheep1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#sheep1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Sheep"/>
+        <Onto4MAT:agentDoesAnIndividualAction rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#attract"/>
+        <Onto4MAT:agentDoesAnIndividualAction rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#jitter"/>
+        <Onto4MAT:agentDoesAnIndividualAction rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#repel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#sheep2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#sheep2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Sheep"/>
+        <Onto4MAT:agentDoesAnIndividualAction rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#attract"/>
+        <Onto4MAT:agentDoesAnIndividualAction rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#jitter"/>
+        <Onto4MAT:agentDoesAnIndividualAction rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#repel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#sheep3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#sheep3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Sheep"/>
+        <Onto4MAT:agentDoesAnIndividualAction rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#attract"/>
+        <Onto4MAT:agentDoesAnIndividualAction rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#jitter"/>
+        <Onto4MAT:agentDoesAnIndividualAction rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#repel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#sheepdog -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#sheepdog">
+        <rdf:type rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Sheepdog"/>
+        <Onto4MAT:agentControlledByAgent rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#shepherd"/>
+        <Onto4MAT:agentDoesAnIndividualAction rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#collect"/>
+        <Onto4MAT:agentDoesAnIndividualAction rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#drive"/>
+        <Onto4MAT:agentDoesAnIndividualAction rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#jitter"/>
+        <Onto4MAT:agentDoesAnIndividualTactic rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#shepherding"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#shepherd -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#shepherd">
+        <rdf:type rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Shepherd"/>
+        <Onto4MAT:agentControlsAgent rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#sheepdog"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#shepherding -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#shepherding">
+        <rdf:type rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualHerding"/>
+        <Onto4MAT:individualTacticDoneByAgent rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#sheepdog"/>
+        <Onto4MAT:individualTacticInfluencesTeam rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#herd"/>
+        <Onto4MAT:taskForAgent rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#collect"/>
+        <Onto4MAT:taskForAgent rdf:resource="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#drive"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Alert"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Alignment"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Arriving"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#AtomicActions"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Avoiding"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Aware"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Block"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#BlockHold"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Break"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Cast"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Cohesion"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Cover"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Docking"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Drive"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Escaping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Evading"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Fleeing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Flocking"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Following"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Graze"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Hiding"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Hold"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Interposing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#ObstacleNegotiation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#OffsetPursuing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Pursuing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#RandomMovement"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Seeking"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Separation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Shadowing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Wandering"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Anxious"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Bold"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Calm"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Gregarious"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Intelligent"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Shy"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#ArcFormation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#EchelonFormation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#FourFingerFormation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#LineFormation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#VeeFormation"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#BlindCast"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#BlindSearchingCast"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#SightedCast"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#SightedShortCast"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#BreakawayBreak"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#CastingBreak"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#PressureBreak"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#SquareBreak"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#ClockSynchronisation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#StateSynchronisation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#StimuliSynchronisation"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Containment"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualCovering"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualHerding"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Navigation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Outrunning"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Patrolling"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Penning"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Singling"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Contracting"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Deforming"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Expanding"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Forming"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Merging"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Spiral"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Splitting"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Erratic"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Leader"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#MobFollower"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#PredationRisk"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#Quiet"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#EscapingObstacle"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#EscapingOpponent"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#UnalignedCollisionEscaping"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#FlowFieldFollowing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#GoalFollowing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#GroupFollowing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#LeaderFollower"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#NearestNeighbourFollowing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#PathFollowing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#WallFollowing"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualBarrierCovering"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualBlanketCovering"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#IndividualSweepCovering"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#MobCover"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#ShortCover"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#SquareCover"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#TeamBarrierCovering"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#TeamBlanketCovering"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#TeamSweepCovering"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#sheep1"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#sheep2"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#sheep1"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#sheep3"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#sheep1"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#sheepdog"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#sheep1"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#shepherd"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#sheep2"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#sheep3"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#sheep2"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#sheepdog"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#sheep2"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#shepherd"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#sheep3"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#sheepdog"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#sheep3"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#shepherd"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#sheepdog"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swarmShepherdingOntology/Onto4MAT#shepherd"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
